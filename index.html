@@ -1,32 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AMG</title>
+    <meta charset="utf-8">
+    <title>梅赛德斯-奔驰</title>
+    <link rel="stylesheet" href="css/Mercedes-benz首页.css">
     <link rel="icon" type="text/css" href="img/标题栏icon.png" />
-    <link rel="stylesheet" href="css/Mercedes-AMG.css">
-    <!-- 百度地图API -->
-    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=pzS8YtrGl5SkpUC61dRutOxj1pz60olm"></script>
 </head>
 
 <body>
+    <!-- 首页 -->
+
+    <!-- 导航栏 -->
+
+    <!-- 空div -->
     <div id="kong">
 
     </div>
-    <div id="AMGnavBar">
-        <div>
-            <img src="img/navBar logo.png" alt="" onclick="window.open('Mercedes-benz首页.html') " style=" width: 259px;height: 64px; cursor: pointer;">
-            <a href="#" onclick="dhlcx1()">车型</a>
-            <a href="#" onclick="gczn1()">购车指南</a>
-            <a href="#" onclick="khfw1()">客户服务</a>
-            <a href="#">Mercedes me</a>
-            <a href="Mercedes-AMG.html">梅赛德斯-AMG</a>
-            <a href="#" style="color: #00adef;">EQ</a>
-            <div onClick="javascript: sousuo()" id="searchImg"><img src="img/navBar白色搜索.png" onmouseover="this.src='img/navBar蓝色搜索.png'" onmouseout="this.src='img/navBar白色搜索.png'" style="cursor: pointer; position: absolute; bottom: 25px;" /></div>
-        </div>
-        <p><a href="Mercedes-benz登录.html" style="font-size:12px;">登录</a> &nbsp;&nbsp; <a href="Mercedes-benz登录.html" style="font-size:12px;">注册</a></p>
+    <div id="navBar">
+        <a href="Mercedes-benz首页.html"><img src="img/navBar logo.png" alt=""></a>
+        <ul>
+            <li><a href="#" onclick="dhlcx1()">车型</a> </li>
+            <li><a href="#" onclick="gczn1()">购车指南</a></li>
+            <li><a href="#" onclick="khfw1()">客户服务</a></li>
+            <li><a href="#">Mercedes me</a></li>
+            <li><a href="Mercedes-AMG.html">梅赛德斯-AMG</a></li>
+            <li><a href="#" style="color: #00adef;">EQ</a></li>
+            <p><a href="Mercedes-benz登录.html">登录</a> &nbsp;&nbsp; <a href="Mercedes-benz登录.html">注册</a></p>
+            <div onClick="javascript: sousuo()" id="searchImg"><img src="img/navBar白色搜索.png" onmouseover="this.src='img/navBar蓝色搜索.png'" onmouseout="this.src='img/navBar白色搜索.png'" style="cursor: pointer;" /></div>
+        </ul>
     </div>
     <div id="dhlcx">
         <img src="img/菱形.svg" alt="">
@@ -454,32 +456,39 @@
             </div>
         </div>
     </div>
+    <!-- input搜索框 -->
     <p id="search"><input type="search" placeholder="全新GLB SUV" />
         <span></span>
     </p>
-    <!-- AMG轮播图 -->
+    <!-- 轮播图 -->
     <div class="wrap">
         <ul class="list">
-            <li class="item active">
+            <li class="item active" onclick="window.open('Mercedes-benz星连心服务.html')">
+                <img src="img/星连心服务，助力战疫.svg" alt="冰雪对决，无处不从容">
+                <p>了解更多</p>
+            </li>
+            <li class="item" onclick="window.open('Mercedes-benz冰雪对决.html')">
+                <img src="img/冰雪对决，无处不从容.svg" alt="冰雪对决，无处不从容">
+                <p>了解更多</p>
+            </li>
+            <li class="item" onclick="window.open('Mercedes-AMG.html')">
                 <img src="img/启动，即非凡.svg" alt="启动，即非凡">
                 <p>了解更多</p>
             </li>
-            <li class="item">
-                <img src="img/AMGGT四门跑车pc.svg" alt="AMGGT四门跑车pc">
+            <li class="item" onclick="window.open('#')">
+                <img src="img/就是这么大才大用.svg" alt="就是这么大才大用">
                 <p>了解更多</p>
             </li>
-            <li class="item">
-                <img src="img/banner-新一代梅赛德斯-AMG-C-63轿车.svg" alt="">
+            <li class="item" onclick="window.open('#')">
+                <img src="img/放怀天地.svg" alt="放怀天地">
                 <p>了解更多</p>
             </li>
-            <li class="item">
-                <img src="img/不言而驭.svg" alt="">
-                <p>四大猛将齐聚赛道，御风之速，一驭便知。</p>
+            <li class="item" onclick="window.open('#')">
+                <img src="img/从此电动豪华.svg" alt="从此电动豪华">
                 <p>了解更多</p>
             </li>
-            <li class="item">
-                <img src="img/ada-slogan-pc.svg" alt="放怀天地">
-                <p>即刻加入梅赛德斯AMG战队，全速集结，驾驭非凡。</p>
+            <li class="item" onclick="window.open('#')">
+                <img src="img/爱无所不在.svg" alt="爱无所不在">
                 <p>了解更多</p>
             </li>
         </ul>
@@ -489,534 +498,148 @@
             <li class="point" data-index='2'></li>
             <li class="point" data-index='3'></li>
             <li class="point" data-index='4'></li>
+            <li class="point" data-index='5'></li>
+            <li class="point" data-index='6'></li>
         </ul>
         <button type="button" class="btn" id="goPre"></button>
         <button type="button" class="btn" id="goNext"></button>
     </div>
-    <!-- AMGlogo -->
-    <div id="AMGlogo"></div>
-    <!-- AMG二级导肮 -->
-    <div id="AMGejdh">
+    <!-- 首页全部车型   轮播图下 -->
+    <div id="qbcx">
+        <p>全部车型</p>
+        <ul>
+            <li>
+                <h4>轿车</h4>
+            </li>
+            <li>
+                <h4>SUV</h4>
+            </li>
+            <li>
+                <h4>轿跑车 &<br>敞篷跑车</h4>
+            </li>
+            <li>
+                <h4>MPV</h4>
+            </li>
+            <li>
+                <h4>纯电动车</h4>
+            </li>
+        </ul>
+    </div>
+    <!-- 首页购车工具 -->
+    <div id="gcgj">
+        <p>购车工具</p>
         <div>
-            <a href="#AMGOne" class="gaoliang">车型</a>
-            <a href="#AMGTwo" class="">查找经销商</a>
-            <a href="#AMGThree" class="">关于AMG</a>
-            <a href="#AMGFour" class="">体验AMG</a>
-            <a href="#AMGFive" class="">AMG赛车活动</a>
-            <a href="#AMGSix" class="">AMG驾驶学院</a>
-            <a href="#AMGSeven" class="">AMG车主俱乐部</a>
+            <ul onclick="window.open('Mercedes-benz查找经销商.html')">
+                <li></li>
+                <li>查找经销商</li>
+            </ul>
+            <ul>
+                <li></li>
+                <li>车型比较</li>
+            </ul>
+            <ul>
+                <li></li>
+                <li>预约试驾</li>
+            </ul>
+            <ul>
+                <li></li>
+                <li>在线购车</li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- 发现更多 -->
+    <div id="fxgd">
+        <p>发现更多</p>
+        <div id="fxgdOne">
+            <ul>
+                <p>限时购车新方案</p>
+                <li>别故，迎新。多种优享方案，助你轻松拥有一辆梅赛德斯-奔驰。</li>
+                <li style="width: 100px;">了解更多</li>
+            </ul>
+        </div>
+        <div id="fxgdTwo">
+            <div>
+                <ul>
+                    <p>加入She’sMercedes</p>
+                    <li>发挥你的声音，唤醒女性力量</li>
+                    <li style="width: 100px;">了解更多</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <p>星友荟</p>
+                    <li>尽情表达自我分享观点、结识新友
+                        <br>的星徽社群。</li>
+                    <li style="width: 100px;">了解更多</li>
+                </ul>
+            </div>
+        </div>
+        <div id="fxgdThree">
+            <ul>
+                <p>星睿认证二手车</p>
+                <li>物转星移，奔驰如初。</li>
+                <li style="width: 100px;">了解更多</li>
+            </ul>
+        </div>
+        <div id="fxgdFour">
+            <ul>
+                <p>Mercedes me车主俱乐部</p>
+                <li>携手跨行业合作伙伴为会员打造优质的用车体验和多方位的生活关怀。</li>
+                <li style="width: 100px;">了解更多</li>
+            </ul>
+        </div>
+        <div id="fxgdFive">
+            <div>
+                <ul>
+                    <p>并肩前行，2019赛季F1世界锦标赛</p>
+                    <li>梅赛德斯- AMG马石油车队，2019赛季征战传奇!</li>
+                    <li style="width: 100px;">了解更多</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <p>SUV征服之旅</p>
+                    <li>邀您即刻了解2019梅赛德斯奔驰SUV征服之旅试驾活动，与SUV家族同踏上这场征程!</li>
+                    <li>了解更多</li>
+                </ul>
+            </div>
+        </div>
+        <div id="fxgdSix">
+            <div>
+                <ul>
+                    <p>从心，认识奔驰、</p>
+                    <li>梅赛德斯-奔驰秘籍，助你成为高手。</li>
+                    <li style="width: 100px;">了解更多</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <p>奔驰杂志</p>
+                    <li style="width: 100px;">了解更多</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <!-- 预约试驾 -->
+    <div id="yysj">
+        <div>
+            <div id="yysjBody">
+                <p>预约试驾</p>
+                <p>亲身体验梅赛德斯-奔驰吧。</p>
+                <p>开始</p>
+            </div>
         </div>
     </div>
-    <!-- 内容开始循环的视频 -->
-    <div id="AMG循环"><video muted src="video/AMG循环.mp4" loop autoplay style="width: 100%; height: 422px;"></video></div>
-    <div id="AMGcontent">
-        <!-- AMG车型 -->
-        <div id="AMGOne" class="kuai" style="padding-top: 10px;">
-            <p>AMG车型</p>
-            <!-- AMG车型内容 -->
-            <div id="cxcontent">
-                <ul>
-                    <li>
-                        <!-- 轿车 -->
-                        <input id="jiaocheAMG" type="radio" name="tabAMG" checked />
-                        <label for="jiaocheAMG">轿车</label>
-                        <div class="content">
-                            <div>
-                                <img src="img/S级轿车.png" alt="">
-                                <p><span>S</span>级 <img src="img/横线.svg" alt=""></p>
-                                <ul>
-                                    <li>梅赛德斯-AMG S 63 L 4MATIC +
-                                        <br> 梅赛德斯-AMG S 65 L
-                                        <span>￥227.88万起/月供￥1,058起</span> </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <img src="img/E级轿车.png" alt="">
-                                <p><span>E</span>级 <img src="img/横线.svg" alt=""></p>
-                                <ul>
-                                    <li>
-                                        梅赛德斯-AMG E 43 4MATIC特别版
-                                        <span>￥89.58万起/月供￥14819起</span>
-                                    </li>
-                                    <li>
-                                        梅赛德斯-AMG E 53 4MATIC+
-                                        <span>￥94.88万起1月供￥808起</span>
-                                    </li>
-                                    <li>
-                                        梅赛德斯-AMG E 63 S 4MATIC +
-                                        <span>￥1 56.08万起/月供￥5,164起</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <img src="img/C级轿车.png" alt="">
-                                <p><span>C</span>级 <img src="img/横线.svg" alt=""></p>
-                                <ul>
-                                    <li>
-                                        梅赛德斯-AMG C 43 4MATIC轿车
-                                        <span>￥59.98万起/月供￥918起</span>
-                                    </li>
-                                    <li>
-                                        新一代梅赛德斯-AMG C 43 4MATIC旅行轿车特别版
-                                        <span>￥65.38万起/月供￥878起</span>
-                                    </li>
-                                    <li>
-                                        梅赛德斯-AMG C 63
-                                        <br> 梅赛德斯-AMG C 63 S
-                                        <span>￥92.28万起/月供￥91 8起</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <img src="img/A级轿车.png" alt="">
-                                <p><span>A</span>级 <img src="img/横线.svg" alt=""></p>
-                                <ul>
-                                    <li>
-                                        全新梅赛德斯-AMG A 35 L 4MATIC
-                                        <span>￥39.98万起/月供￥638起</span>
-                                    </li>
-                                    <li>
-                                        梅赛德斯-AMG A 45 4MATIC
-                                        <span>￥45.38万起/月供￥1,734起</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <!-- SUV -->
-                        <input id="SUVAMG" type="radio" name="tabAMG">
-                        <label for="SUVAMG">SUV</label>
-                        <div class="content">
-                            <div>
-                                <img src="img/G级.png" alt="">
-                                <p><span>G</span>级 <img src="img/横线.svg" alt=""></p>
-                                <ul>
-                                    <li>
-                                        新一代梅赛德斯-AMG G 63
-                                        <span>￥222 88万起/月供￥9452起</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <img src="img/GLS.png" alt="">
-                                <p><span>GLS</span><img src="img/横线.svg" alt=""></p>
-                                <ul>
-                                    <li>
-                                        梅赛德斯-AMG GLS 63 4MATIC
-                                        <span>￥179.98万起/月供￥7,297起</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <img src="img/GLE.png" alt="">
-                                <p><span>GLE</span><img src="img/横线.svg" alt=""></p>
-                                <ul>
-                                    <li>
-                                        梅赛德斯-AMG GLE 43 4MATIC
-                                        <span>￥94.18万起/月供￥4345起</span>
-                                    </li>
-                                    <li>
-                                        梅赛德斯-AMG GLE 43 4MATIC轿跑SUV
-                                        <span>￥96 48万起/月供￥4,182起</span>
-                                    </li>
-                                    <li>
-                                        全新梅赛德斯-AMG GLE 53 4MATIC+
-                                        <span>￥98.88万起1月供￥15,263起</span>
-                                    </li>
-                                    <li>
-                                        梅赛德斯-AMG GLE 63 4MATIC
-                                        <span>￥1 68.58万起/月供￥6,992起</span>
-                                    </li>
-                                    <li>
-                                        梅赛德斯-AMG GLE 63 4MATIC轿跑SUV
-                                        <span>￥175.38万起/月供￥6,784起</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <img src="img/GLC.png" alt="">
-                                <p><span>GLC</span><img src="img/横线.svg" alt=""></p>
-                                <ul>
-                                    <li>
-                                        梅赛德斯-AMG GLC 43 4MATIC
-                                        <span>￥63.68万起/月供￥1,088起</span>
-                                    </li>
-                                    <li>
-                                        梅赛德斯-AMG GLC 43 4MATIC轿跑SUV
-                                        <span>￥66.38万起/月供￥988起</span>
-                                    </li>
-                                    <li>
-                                        梅赛德斯-AMG GLC 63 4MATIC+
-                                        <span>￥96.58万起/月供￥1 ,268起</span>
-                                    </li>
-                                    <li>
-                                        梅赛德斯-AMG GLC 63 4MATIC+轿跑SUV
-                                        <span>￥99.48万起/月供￥1,078起</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <!-- 敞篷跑车 -->
-                        <input id="cppcAMG" type="radio" name="tabAMG">
-                        <label for="cppcAMG">轿跑车&敞篷跑车</label>
-                        <div class="content">
-                            <div>
-                                <img src="img/S级轿车.png" alt="">
-                                <p><span>S</span>级<img src="img/横线.svg" alt=""></p>
-                                <ul>
-                                    <li>梅赛德斯-AMG S 63 4MATIC+轿跑车
-                                        <span>￥229.88万起,月供￥628起</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <img src="img/E级轿车.png" alt="">
-                                <p><span>E</span>级<img src="img/横线.svg" alt=""></p>
-                                <ul>
-                                    <li>梅赛德斯-AMG E 53 4MATIC+轿跑车
-                                        <span>￥97.88万起/月供￥828起</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <img src="img/E级轿车.png" alt="">
-                                <p><span>E</span>级<img src="img/横线.svg" alt=""></p>
-                                <ul>
-                                    <li>梅赛德斯-AMG C 43 4MATIC轿跑车
-                                        <span>￥63 48万起/月供￥848起</span>
-                                    </li>
-                                    <li>
-                                        梅赛德斯-AMG C 63轿跑车梅赛德斯AMGC63S轿跑车
-                                        <span>￥95.28万起/月供￥828起</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <img src="img/AMGGT.png" alt="">
-                                <p><span>GT</span><img src="img/横线.svg" alt=""></p>
-                                <ul>
-                                    <li>
-                                        梅赛德斯-AMG GT四门跑车
-                                        <span>￥97.38万起/月供￥14,157起</span>
-                                    </li>
-                                    <li>
-                                        新一代梅赛德斯-AMG GT <br> 新一代梅赛德斯-AMG GT S <br> 新代梅赛德斯-AMG GT C <br> 全新梅赛德斯-AMG GT C <br> 敞篷跑车
-                                        <span>￥131.88万起/月供￥18.884起</span>
-                                    </li>
-                                    <li>
-                                        新一代梅赛德斯-AMG GT R 全新梅赛德斯-AMG GT R PRO
-                                        <span>￥212.88万起/月供￥30,483起</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- 查找经销商 -->
-        <div id="AMGTwo" class="kuai" style="padding-top: 60px;">
-            <p>查找经销商</p>
-            <div id="mapBox" style="position: relative;">
-                <div style="width:100%;height:610px;font-size:12px;" id="map">
-                </div>
-                <div id="mapLeft">
-                    <p><img src="img/红定位.svg" style="position:absolute;cursor: pointer; top: 21px;left: 20px;"> 运城市 <a href="#" style="margin-right: 110px;">使用我的确切位置</a><a href="#">更改城市</a></p>
-                    <input type="scarch" placeholder="经销商名称">
-                    <div>您可以按需求筛选经销商 <span><img src="img/红筛选.svg"style="width:10px;" alt=""> 筛选条件</span></div>
-                    <p style="color: white;">为您找到1个经销商</p>
-                    <div id="jxs">
-                        <h6>山西神驰汽车销售有限公司 <span>9.6km</span></h6>
-                        <p>空港开发区关公西街11号</p>
-                        <p>+86 359 7902222</p>
-                        <ul>
-                            <li>星睿二手车</li>
-                            <li style="color: #CC0000;">乘用车</li>
-                            <li>奔驰金融服务</li>
-                            <li>大客户中心</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <!-- 关于AMG -->
-        <div id="AMGThree" class="kuai" style="padding-top: 60px;">
-            <p>关于AMG</p>
-            <div>
-                <p>AMG公司</p>
-                <p>
-                    AMG总部位于非凡驾驭之乡——德国阿法特巴赫。作为戴姆勒集团在高性能车细分市场中的技术先锋，AMG以“非凡驾驭”作为品牌承诺、始终以尖端科技与执着匠心磨砺自我:旨在打造兼具品质和动力的高性能座驾，为客户带来酣畅淋漓的多重感官体验。
-                </p>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <input id="gailan" type="radio" name="AMGgs" checked>
-                        <label for="gailan" style="right: 725px;">概览</label>
-                        <div class="AMGgsBody">
-                            <img src="img/AMG公司概览.png" alt="">
-                            <div>
-                                <p>概览</p>
-                                <p>在世界各地，AMG三个字母都象征着汽车的高性能、独特气质以及纯粹的驾驭乐趣。梅赛德斯-AMG将打造颇具型格的高性能汽车作为自己的品牌特色：包含开发设计、空气学动力特性、内饰、传动系统、发动机、悬挂、制动器和电子设备，并最终进行AMG整车的生产。
-                                </p>
-                                <p>阅读更多</p>
-                            </div>
-
-                        </div>
-                    </li>
-                    <li>
-                        <input id="dzAMG" type="radio" name="AMGgs">
-                        <label for="dzAMG" style="right: 625px;">打造AMG</label>
-                        <div class="AMGgsBody">
-                            <img src="img/打造AMG.png" alt="">
-                            <div>
-                                <p>打造AMG</p>
-                                <p>AMG不只是一台大马力的奔驰汽车——它实质上是一台身负颠覆性的汽车杰作。为了能整合AMG高性能技术，并将之与汽车的性能配置完美融合，AMG的工程师所提出颇具关键性的问题：我们对纵向动力学性能有何期望？对横向动力学性能有何期望？对运动性有何要求？对舒适性有何要求？这些问题的答案将决定汽车的铸造根基。
-                                </p>
-                                <p>阅读更多</p>
-                            </div>
-
-                        </div>
-                    </li>
-                    <li>
-                        <input id="fxAMG" type="radio" name="AMGgs">
-                        <label for="fxAMG" style="right: 525px;">发现AMG</label>
-                        <div class="AMGgsBody">
-                            <img src="img/发现AMG.png" alt="">
-                            <div>
-                                <p>发现AMG</p>
-                                <p>AMG高性能汽车技术与其他汽车技术有着本质上的区别，这对AMG设计中心的工作人员来说也是无比巨大的挑战： 在设计出强健匀称的外观同时，还要将高性能技术加以整合，确保将技术要求转化为独立的设计语言，打造出真正的高性能汽车。这也正是AMG始终遵循的基本原则：形式遵从性能。
-                                </p>
-                                <p>阅读更多</p>
-                            </div>
-
-                        </div>
-                    </li>
-                    <li>
-                        <input id="yryj" type="radio" name="AMGgs">
-                        <label for="yryj" style="right: 425px;">一人一机</label>
-                        <div class="AMGgsBody">
-                            <img src="img/一人一机.png" alt="">
-                            <div>
-                                <p>一人一机</p>
-                                <p>发动机是每台AMG汽车跳动的心脏，为确保发动机能随时激发出澎湃能量，满足汽车漫长使用期内的苛刻需求，所有AMG发动机都是在AMG工厂通过严苛的标准精心打造。AMG坚持“一位工程师，一台发动机”的品牌哲学，每台发动机都由一名技艺精湛的AMG发动机工程师单独装配而成，并在发动机铭牌上亲笔署名。
-                                </p>
-                                <p>阅读更多</p>
-                            </div>
-
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <p>AMG故事</p>
-                <p>
-                    AMG的故事要从戴姆勒-奔驰（Daimler-Benz）的两位工程师说起。A（Aufrecht）M（Melcher）G（Gro aspach）：三个字母背后的名字便是一家由两人公司迅速发展成为全球品牌的故事起点。
-                </p>
-            </div>
-            <!-- AMG故事 -->
-            <div>
-                <ul>
-                    <!-- 起点 -->
-                    <li>
-                        <input id="qidian" type="radio" name="AMGgushi" checked>
-                        <label for="qidian" style="left: 300px;">起点</label>
-                        <div class="AMGgusBody">
-                            <img src="img/故事起点.png" alt="">
-                            <div>
-                                <p>故事</p>
-                                <p>上世纪60年代，Hans Werner Aufrecht与Erhard Melcher在戴姆勒-奔驰集团的研发部门工作，负责调校300 SE赛车发动机。直至梅赛德斯-奔驰暂别赛车运动后，Aufrecht和Melcher在位于Großaspach的Aufrecht家中，用业余时间进一步提升发动机性能，希望实现自己的赛车梦。
-                                </p>
-                                <p>阅读更多</p>
-                            </div>
-                        </div>
-                    </li>
-                    <!-- 发展 -->
-                    <li>
-                        <input id="fazhan" type="radio" name="AMGgushi">
-                        <label for="fazhan" style="left: 365px;">发展</label>
-                        <div class="AMGgusBody">
-                            <img src="img/故事发展.png" alt="">
-                            <div>
-                                <p>发展</p>
-                                <p>20世纪70年代早期，一个新型专业领域逐步发展起来——定制。在随后几年的发展中，AMG为越来越多的梅赛德斯-奔驰车型上应用了高性能赛车技术。随着客户越来越多，业务细分市场促使AMG发展为中型公司。1976年，拥有十几名员工的AMG将建造车间与办公室迁至阿法特巴赫。
-                                </p>
-                                <p>阅读更多</p>
-                            </div>
-                        </div>
-                    </li>
-                    <!-- 加入大家庭 -->
-                    <li>
-                        <input id="jrdjt" type="radio" name="AMGgushi">
-                        <label for="jrdjt" style="left: 430px;">加入大家庭</label>
-                        <div class="AMGgusBody">
-                            <img src="img/加入大家庭.png" alt="">
-                            <div>
-                                <p>加入大家庭</p>
-                                <p>1990年，AMG与戴姆勒-奔驰签署合作协议，这是AMG历史上最重要的决策之一；1993年，AMG推出了梅赛德斯-奔驰C 36 AMG，这是双方在签署合作协议后共同研发的第一款汽车。同年，鉴于AMG已颇负盛名，专利局正式认可AMG成为商标；1999年，戴姆勒-克莱斯勒（DaimlerChrysler AG）成为AMG的大股东。
-                                </p>
-                                <p>阅读更多</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <input id="jinriAMG" type="radio" name="AMGgushi">
-                        <label for="jinriAMG" style="left: 535px;">今日AMG</label>
-                        <div class="AMGgusBody">
-                            <img src="img/今日AMG.png" alt="">
-                            <div>
-                                <p>今日AMG</p>
-                                <p>作为源自赛道的高性能汽车品牌，AMG这三个字母从诞生之日起，就以引以为傲的赛车性能，不同凡响的产品魅力，令人热血沸腾的驾驭激情，受到世界各地高性能汽车爱好者的热烈追捧。50年以来，梅赛德斯-AMG始终秉承“非凡驾驭”的品牌理念将纯粹的赛道基因注入每一款产品中，创造出既适合日常驾驶又充满赛道激情的高性能汽车。
-                                </p>
-                                <p>阅读更多</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <p>AMG工程技术</p>
-                <p>
-                    从动力传动系统的独特设计到精心打造，从微妙的细节将车身打造至趋近完美，每款AMG旨在创造令人难忘的动态驾驶体验。
-                </p>
-            </div>
-            <!-- AMG工程技术 -->
-            <div>
-                <ul>
-                    <li>
-                        <input id="xnsj" type="radio" name="gcjs" checked>
-                        <label for="xnsj" style="right: 725px;">性能设计</label>
-                        <div class="AMGgcjsBody">
-                            <img src="img/性能设计.png" alt="">
-                            <div>
-                                <p>性能设计</p>
-                                <span>设计</span>
-                                <span>AMG品牌面孔</span>
-                                <span>大胆风格的独特设计只为动感AMG</span>
-                            </div>
-
-                        </div>
-                    </li>
-                    <li>
-                        <input id="dlcs" type="radio" name="gcjs">
-                        <label for="dlcs" style="right: 625px;">动力传输</label>
-                        <div class="AMGgcjsBody">
-                            <img src="img/动力传输.jpg" alt="">
-                            <div>
-                                <p>动力传输</p>
-                                <span>传输</span>
-                                <span>AMG SPEEDSHIFT DCT 7速运动型变速器</span>
-                                <span>AMG Speedshift MCT 7速运动型变速器</span>
-                                <span>AMG SPEEDSHIFT PLUS 7G-TRONIC自动变速器</span>
-                                <span>9速自动变速箱</span>
-                            </div>
-
-                        </div>
-                    </li>
-                    <li>
-                        <input id="dlzy" type="radio" name="gcjs">
-                        <label for="dlzy" style="right: 525px;">动力之源</label>
-                        <div class="AMGgcjsBody">
-                            <img src="img/动力之源.png" alt="">
-                            <div>
-                                <p>动力之源</p>
-                                <span>AMG 2.0升4缸涡轮增压发动机(M133)</span>
-                                <span>AMG 4.0升V8双涡轮增压发动机(M177)</span>
-                                <span>AMG 4.0升V8双涡轮增压发动机(M178)</span>
-                                <span>AMG 5.5升V8双涡轮增压发动机 (M157)</span>
-                                <span>AMG 6.0升V12双涡轮增压发动机 (M279)</span>
-                            </div>
-
-                        </div>
-                    </li>
-                    <li>
-                        <input id="dtck" type="radio" name="gcjs">
-                        <label for="dtck" style="right: 425px;">动态操控</label>
-                        <div class="AMGgcjsBody">
-                            <img src="img/动态操控.png" alt="">
-                            <div>
-                                <p>动态操控</p>
-                                <span>控制</span>
-                                <span>AMG运动型参数化转向系统</span>
-                                <span>AMG运动型全时四轮驱动系统</span>
-                                <span>AMG高性能制动系统</span>
-                                <span>AMG高性能复合制动系统</span>
-                            </div>
-
-                        </div>
-                    </li>
-                    <li>
-                        <input id="donglph" type="radio" name="gcjs">
-                        <label for="donglph" style="right: 325px;">动力平衡</label>
-                        <div class="AMGgcjsBody">
-                            <img src="img/动力平衡.png" alt="">
-                            <div>
-                                <p>动力平衡</p>
-                                <span>AMG 运动型悬挂</span>
-                                <span>AMG 行驶控制(RIDE CONTROL)运动型悬挂</span>
-                                <span>基于空气悬挂技术(AIRMATIC)的 AMG 运动型悬挂</span>
-                                <span>基于魔术车身控制系统(MAGIC BODY CONTROL) 的 AMG 运动型悬挂</span>
-                            </div>
-
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- 体验AMG -->
-        <div id="AMGFour" class="kuai" style="padding-top: 10px;">
-            <p>体验AMG</p>
-            <video src="video/AMG 体验 1440x600.mp4" poster="img/体验AMG.jpg" controls></video>
-        </div>
-        <!-- AMG赛车活动 -->
-        <div id="AMGFive" class="kuai" style="padding-top: 10px;">
-            <p>AMG赛车活动</p>
-            <div>
-                AMG始终将赛车运动与工程技术联系在一起。每次征战赛车运动所取得的成功，都对AMG品牌有着格外的意义：这是一种强有力的佐证，证明了我们能多么有效地将尖端工程技术从实验室带入实际驾驶性能领域。
-            </div>
-            <video src="video/AMG赛车活动.mp4" poster="img/AMG赛车活动封面.jpg" controls></video>
-        </div>
-        <!-- AMG驾驶学院 -->
-        <div id="AMGSix" class="kuai" style="padding-top: 60px;">
-            <p>AMG驾驶学院</p>
-            <div>
-                拥有一台AMG高性能座驾，仅仅是迈向“非凡驾驭”的第一步。如何将性能野兽操控自如、挖掘出座驾自身的无限潜力，甚至步入赛道、向赛手进阶发起全速冲刺？一切答案尽在AMG驾驶学院！在性能、高级、专业和大师4种不同级别的课程中磨练驾驶技巧，掌握如何在极限条件下安全驾驭高性能汽车！
-            </div>
-            <a href="#">了解更多</a>
-            <img src="img/AMG驾驶学院.jpg" alt="">
-            <div>
-                <img src="img/AMG二维码.png" alt="" style="width: 213px; height: 213px;">
-                <p>AMG公众号</p>
-            </div>
-        </div>
-        <!-- AMG车主俱乐部 -->
-        <div id="AMGSeven" class="kuai" style="padding-top: 60px;">
-            <p>AMG车主俱乐部</p>
-            <div>
-                AMG车主俱乐部是为AMG尊贵车主打造的专属在线社区。在这里，您可以第一时间了解AMG新车资讯，更可参与AMG车主专属活动，与AMG车主进行畅所欲言地交流。
-            </div>
-            <a href="#">了解更多</a>
-            <img src="img/AMG车主俱乐部pc.jpg" alt="">
-        </div>
-    </div>
-    <div id="ps">
-        <img src="img/横线.svg" alt="">
-        <p>产品（含具体配置、相关细节等）以经销商展示、销售的适用于中国大陆的具体车型及产品为准。</p>
-        <p>本产品网页中提及的所有价格（包括整车、配件、金融产品等）均为厂商建议零售价格。</p>
-        <p>厂商建议零售价格仅为建议，不具有任何约束力。</p>
-        <p>具体的零售交易价格、产品配置及交易细节请与相关授权经销商协商确定。</p>
-        <p>更多详情，敬请莅临梅赛德斯-奔驰当地授权经销商，或致电400-810-8880、400-818-1188。</p>
-    </div>
-    <div id="AMGfxd">
+    <!-- 分享到 -->
+    <div id="fxd">
         <span>分享到</span>
-        <a href="#"><img src="img/AMG微信.svg" alt=""></a>
-        <a href="#"><img src="img/AMG微博.svg" alt=""></a>
+        <a href="#"><img src="img/微信logo.svg" alt=""></a>
+        <a href="#"><img src="img/微博logo.svg" alt=""></a>
     </div>
-    <div id="AMGbottomNav">
+    <!-- 下部导航栏 -->
+    <div id="bottomNav">
         <div>
             <ul>
                 <h4>车型</h4>
@@ -1083,7 +706,7 @@
     </div>
     <!-- 版权部份 -->
 
-    <div id="AMGbanquan">
+    <div id="banquan">
         <div><a href="#"> &copy; 梅赛德斯-奔驰版权所有</a></div>
         <div>
             <a href="#">网站地图</a>
@@ -1096,16 +719,13 @@
         </div>
     </div>
     <!-- 联系我们按钮 -->
-    <div id="AMGleftbottom" onclick="window.open('Mercedes-benz联系我们.html')">
+    <div id="leftbottom" onclick="window.open('Mercedes-benz联系我们.html')">
 
     </div>
-    <script src="js/Mercedes-AMG轮播图.js"></script>
-    <script src="js/Mercedes-AMG单击.js"></script>
-    <script src="js/Mercedes-AMG导航栏.js"></script>
-    <script src="js/Mercedes-AMG查找经销商.js"></script>
-    <script src="js/Mercedes-AMG二级菜单固定.js"></script>
-    <script src="js/Mercedes-AMG二级菜单高亮.js"></script>
-    <script src="js/Mercedes-AMG固定高亮.js"></script>
+
 </body>
+<script src="js/Mercedes-benz导航栏.js"></script>
+<script src="js/Mercedes-benz单击.js"></script>
+<script src="js/Mercedes-benz轮播图.js"></script>
 
 </html>
