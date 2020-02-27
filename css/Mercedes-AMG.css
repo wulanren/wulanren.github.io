@@ -634,7 +634,7 @@
 }
 
 .pointList:hover .point.active {
-    width: 80px;
+    width: 0px;
     height: 4px;
     background: #CC0000;
     transition: width 4s linear;
@@ -644,7 +644,7 @@
 /* 当前轮播图对应li */
 
 .point.active {
-    width: 80px;
+    width: 0px;
     height: 1px;
     background: #CC0000;
     transition: width 4s linear;
