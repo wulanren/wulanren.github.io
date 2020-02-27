@@ -5,6 +5,7 @@ var points = document.getElementsByClassName('point'); //点
 var index = 0; //index表示第几张图片在展示  ---》第index张图片有active这个类名
 var time = 0; //定时器跳转参数
 //第几个点在展示
+
 var clearActive = function() {
     for (var i = 0; i < items.length; i++) {
         items[i].className = 'item';
@@ -39,9 +40,11 @@ var goPre = function() {
     goIndex();
 }
 goNextBtn.addEventListener('click', function() {
+    time = 0;
     goNext();
 })
 goPreBtn.addEventListener('click', function() {
+    time = 0;
     goPre();
 })
 
@@ -54,11 +57,12 @@ for (var i = 0; i < points.length; i++) {
         time = 0;
     })
 }
-//2000ms   跳转一次
+//4000ms   跳转一次
 setInterval(function() {
     time++;
     if (time == 40) {
-        goNext();
         time = 0;
+        goNext();
+
     }
 }, 100)

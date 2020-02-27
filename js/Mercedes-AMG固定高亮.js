@@ -2,8 +2,8 @@ $(document).ready(
     function() {
         $(window).scroll(function() {
             var top = $(document).scrollTop(); //获取滚动条的位置
-            var AMGejdh = $('#AMGejdh');
-            var items = $('#AMGcontent').find('.kuai');
+            var cxzldhl = $('#cxzldhl');
+            var items = $('#cxzlbody').find('.kuai1');
 
             var contentId = "";
             items.each(function() {
@@ -17,10 +17,10 @@ $(document).ready(
                 }
                 console.log(itemTop);
             });
-            var contentLink = AMGejdh.find(".gaoliang");
+            var contentLink = cxzldhl.find(".gaoliang1");
             if (contentId && contentLink.attr('href') != contentId) {
-                contentLink.removeClass('gaoliang');
-                AMGejdh.find('[href=' + contentId + ']').addClass("gaoliang");
+                contentLink.removeClass('gaoliang1');
+                cxzldhl.find('[href=' + contentId + ']').addClass("gaoliang1");
             }
 
         });
