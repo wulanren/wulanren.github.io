@@ -39,9 +39,11 @@ var goPre = function() {
     goIndex();
 }
 goNextBtn.addEventListener('click', function() {
+    time = 0;
     goNext();
 })
 goPreBtn.addEventListener('click', function() {
+    time = 0;
     goPre();
 })
 
