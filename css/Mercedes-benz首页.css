@@ -1,5 +1,3 @@
-/* PC端   包含ipadPro */
-
 html {
     scroll-behavior: smooth;
 }
@@ -41,6 +39,9 @@ html {
     box-shadow: 15px 15px #f8a5c2, -15px -15px #f5cd79;
     transform: translate(-50%, -50%) rotate(90deg);
 }
+
+
+/* PC端   包含ipadPro */
 
 @keyframes loading {
     50% {
@@ -149,7 +150,7 @@ html {
         position: relative;
         top: 30px;
         right: 330px;
-        background: url(../img/navBar分隔.png) center 0% no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/navBar%E5%88%86%E9%9A%94.png) center 0% no-repeat;
     }
     @media only screen and (max-device-width: 1024px) {
         #kong {
@@ -163,7 +164,7 @@ html {
             position: relative;
             top: 15px;
             right: 70px;
-            background: url(../img/navBar分隔.png) center 0% no-repeat;
+            background: url(http://q6ayyk4mw.bkt.clouddn.com/navBar%E5%88%86%E9%9A%94.png) center 0% no-repeat;
         }
     }
     /* 导航栏车型 */
@@ -440,7 +441,7 @@ html {
         height: 36px;
         margin-top: 10px;
         padding-left: 30px;
-        background: url(../img/searchBar搜索.svg) no-repeat left;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/searchBar%E6%90%9C%E7%B4%A2.svg) no-repeat left;
         background-size: 10%;
         float: left;
         position: absolute;
@@ -458,7 +459,7 @@ html {
         width: 32px;
         height: 32px;
         float: left;
-        background: url(../img/searchBar黑右箭头.svg) no-repeat #666666;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/searchBar%E9%BB%91%E5%8F%B3%E7%AE%AD%E5%A4%B4.svg) no-repeat #666666;
         background-position: center;
         margin-top: 12px;
         margin-left: 20px;
@@ -499,7 +500,7 @@ html {
     }
     /* 第一张 */
     .wrap .list li:nth-of-type(1) {
-        background: url(../img/轮播图.jpg) center center no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E8%BD%AE%E6%92%AD%E5%9B%BE.jpg) center center no-repeat;
         background-size: cover;
     }
     .wrap .list li:nth-of-type(1) img {
@@ -522,7 +523,7 @@ html {
     }
     /* 第二张 */
     .wrap .list li:nth-of-type(2) {
-        background: url(../img/首页轮播图1.jpg) center center no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E9%A6%96%E9%A1%B5%E8%BD%AE%E6%92%AD%E5%9B%BE1.jpg) center center no-repeat;
         background-size: cover;
     }
     .wrap .list li:nth-of-type(2) img {
@@ -546,7 +547,7 @@ html {
     }
     /* 第三张 */
     .wrap .list li:nth-of-type(3) {
-        background: url(../img/首页轮播图3.jpg) center center no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E9%A6%96%E9%A1%B5%E8%BD%AE%E6%92%AD%E5%9B%BE3.jpg) center center no-repeat;
         background-size: cover;
     }
     .wrap .list li:nth-of-type(3) img {
@@ -570,7 +571,7 @@ html {
     }
     /* 第四张 */
     .wrap .list li:nth-of-type(4) {
-        background: url(../img/首页轮播图2.jpg) center center no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E9%A6%96%E9%A1%B5%E8%BD%AE%E6%92%AD%E5%9B%BE2.jpg) center center no-repeat;
         background-size: cover;
     }
     .wrap .list li:nth-of-type(4) img {
@@ -594,7 +595,7 @@ html {
     }
     /* 第五张 */
     .wrap .list li:nth-of-type(5) {
-        background: url(../img/首页轮播图4.jpg) center center no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E9%A6%96%E9%A1%B5%E8%BD%AE%E6%92%AD%E5%9B%BE4.jpg) center center no-repeat;
         background-size: cover;
     }
     .wrap .list li:nth-of-type(5) img {
@@ -618,7 +619,7 @@ html {
     }
     /* 第六张 */
     .wrap .list li:nth-of-type(6) {
-        background: url(../img/首页轮播图5.jpg) center center no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E9%A6%96%E9%A1%B5%E8%BD%AE%E6%92%AD%E5%9B%BE5.jpg) center center no-repeat;
         background-size: cover;
     }
     .wrap .list li:nth-of-type(6) img {
@@ -642,7 +643,7 @@ html {
     }
     /* 第七张 */
     .wrap .list li:nth-of-type(7) {
-        background: url(../img/首页轮播图6.jpg) center center no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E9%A6%96%E9%A1%B5%E8%BD%AE%E6%92%AD%E5%9B%BE5.jpg) center center no-repeat;
         background-size: cover;
     }
     .wrap .list li:nth-of-type(7) img {
@@ -688,12 +689,12 @@ html {
     /* 轮播图左翻页按钮 */
     #goPre {
         left: 30px;
-        background: url(../img/左.svg) no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E5%B7%A6.svg) no-repeat;
     }
     /* 轮播图右翻页按钮 */
     #goNext {
         right: 30px;
-        background: url(../img/右.svg) no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E5%8F%B3.svg) no-repeat;
     }
     /* 轮播图下中位置按钮 */
     .pointList {
@@ -741,7 +742,7 @@ html {
         margin: 0 auto;
         display: flex;
         justify-content: center;
-        background: url(../img/全部车型背景图.jpg) center center no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E5%85%A8%E9%83%A8%E8%BD%A6%E5%9E%8B%E8%83%8C%E6%99%AF%E5%9B%BE.jpg) center center no-repeat;
         background-size: cover;
     }
     #qbcx ul>li {
@@ -806,19 +807,19 @@ html {
         height: 60px;
     }
     #gcgj div ul:nth-of-type(1) li:nth-of-type(1) {
-        background: url(../img/购车工具1.svg) center center no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E8%B4%AD%E8%BD%A6%E5%B7%A5%E5%85%B71.svg) center center no-repeat;
         background-size: 20%;
     }
     #gcgj div ul:nth-of-type(2) li:nth-of-type(1) {
-        background: url(../img/购车工具2.svg) center center no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E8%B4%AD%E8%BD%A6%E5%B7%A5%E5%85%B72.svg) center center no-repeat;
         background-size: 20%;
     }
     #gcgj div ul:nth-of-type(3) li:nth-of-type(1) {
-        background: url(../img/购车工具3.svg) center center no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E8%B4%AD%E8%BD%A6%E5%B7%A5%E5%85%B73.svg) center center no-repeat;
         background-size: 20%;
     }
     #gcgj div ul:nth-of-type(4) li:nth-of-type(1) {
-        background: url(../img/购车工具4.svg) center center no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E8%B4%AD%E8%BD%A6%E5%B7%A5%E5%85%B74.svg) center center no-repeat;
         background-size: 20%;
     }
     #gcgj div ul li:nth-of-type(2) {
@@ -841,7 +842,7 @@ html {
         width: 100%;
         height: 392px;
         cursor: pointer;
-        background: url(../img/首页轮播图2.jpg) center center no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E9%A6%96%E9%A1%B5%E8%BD%AE%E6%92%AD%E5%9B%BE2.jpg) center center no-repeat;
         background-size: cover;
         margin-bottom: 50px;
     }
@@ -958,7 +959,7 @@ html {
         height: 300px;
         cursor: pointer;
         float: right;
-        background: url(../img/星友荟.jpg) center no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E6%98%9F%E5%8F%8B%E8%8D%9F.jpg) center no-repeat;
         background-size: cover;
     }
     #fxgd #fxgdTwo div:nth-of-type(2):hover ul {
@@ -1011,7 +1012,7 @@ html {
         width: 100%;
         height: 330px;
         cursor: pointer;
-        background: url(../img/星睿认证二手车.jpg) center center no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E6%98%9F%E7%9D%BF%E8%AE%A4%E8%AF%81%E4%BA%8C%E6%89%8B%E8%BD%A6.jpg) center center no-repeat;
         background-size: cover;
         margin-bottom: 50px;
     }
@@ -1065,7 +1066,7 @@ html {
         width: 100%;
         height: 330px;
         cursor: pointer;
-        background: url(../img/车主俱乐部.png)no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E8%BD%A6%E4%B8%BB%E4%BF%B1%E4%B9%90%E9%83%A8.png)no-repeat;
         background-size: cover;
         margin-bottom: 50px;
     }
@@ -1126,7 +1127,7 @@ html {
         width: 33%;
         height: 300px;
         cursor: pointer;
-        background: url(../img/奔驰F1.jpg) center no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E5%A5%94%E9%A9%B0F1.jpg) center no-repeat;
         background-size: cover;
     }
     #fxgd #fxgdFive div:nth-of-type(1):hover ul {
@@ -1199,7 +1200,7 @@ html {
         width: 66%;
         height: 300px;
         cursor: pointer;
-        background: url(../img/天地即征途.jpg) center center no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E5%A4%A9%E5%9C%B0%E5%8D%B3%E5%BE%81%E9%80%94.jpg) center center no-repeat;
         background-size: cover;
     }
     #fxgd #fxgdFive div:nth-of-type(2):hover ul {
@@ -1260,7 +1261,7 @@ html {
         width: 66%;
         height: 300px;
         cursor: pointer;
-        background: url(../img/从心，认识奔驰.jpg) center center no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E4%BB%8E%E5%BF%83%EF%BC%8C%E8%AE%A4%E8%AF%86%E5%A5%94%E9%A9%B0.jpg) center center no-repeat;
         background-size: cover;
     }
     #fxgd #fxgdSix div:nth-of-type(1):hover ul {
@@ -1314,7 +1315,7 @@ html {
         width: 33%;
         height: 300px;
         cursor: pointer;
-        background: url(../img/奔驰杂志.jpg) center no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E5%A5%94%E9%A9%B0%E6%9D%82%E5%BF%97.jpg) center no-repeat;
         background-size: cover;
     }
     #fxgd #fxgdSix div:nth-of-type(2):hover ul {
@@ -1367,7 +1368,7 @@ html {
         width: 100%;
         height: 422px;
         position: relative;
-        background: url(../img/预约试驾.jpg) center center no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E9%A2%84%E7%BA%A6%E8%AF%95%E9%A9%BE.jpg) center center no-repeat;
         background-size: cover;
     }
     #yysj div #yysjBody {
@@ -1565,7 +1566,7 @@ html {
         bottom: 20%;
         z-index: 100;
         cursor: pointer;
-        background: url(../img/右下角联系我们.png)center center no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E5%8F%B3%E4%B8%8B%E8%A7%92%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC.png)center center no-repeat;
         background-size: cover;
     }
     @media only screen and (max-device-width: 1024px) {
@@ -1577,7 +1578,7 @@ html {
             bottom: 20%;
             z-index: 100;
             cursor: pointer;
-            background: url(../img/右下角联系我们.png)center center no-repeat;
+            background: url(http://q6ayyk4mw.bkt.clouddn.com/%E5%8F%B3%E4%B8%8B%E8%A7%92%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC.png)center center no-repeat;
             background-size: cover;
         }
     }
@@ -1657,7 +1658,7 @@ html {
         position: absolute;
         top: 40%;
         right: 20px;
-        background: url(../img/更多.svg) no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E6%9B%B4%E5%A4%9A.svg) no-repeat;
     }
     #navBar>div a {
         display: none;
@@ -1690,7 +1691,7 @@ html {
     }
     /* 第一张 */
     .wrap .list li:nth-of-type(1) {
-        background: url(../img/轮播图.jpg) center center no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E8%BD%AE%E6%92%AD%E5%9B%BE.jpg) center center no-repeat;
         background-size: cover;
     }
     .wrap .list li:nth-of-type(1) img {
@@ -1712,7 +1713,7 @@ html {
     }
     /* 第二张 */
     .wrap .list li:nth-of-type(2) {
-        background: url(../img/首页轮播图1.jpg) center center no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E9%A6%96%E9%A1%B5%E8%BD%AE%E6%92%AD%E5%9B%BE1.jpg) center center no-repeat;
         background-size: cover;
     }
     .wrap .list li:nth-of-type(2) img {
@@ -1735,7 +1736,7 @@ html {
     }
     /* 第三张 */
     .wrap .list li:nth-of-type(3) {
-        background: url(../img/首页轮播图3.jpg) center center no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E9%A6%96%E9%A1%B5%E8%BD%AE%E6%92%AD%E5%9B%BE3.jpg) center center no-repeat;
         background-size: cover;
     }
     .wrap .list li:nth-of-type(3) img {
@@ -1758,7 +1759,7 @@ html {
     }
     /* 第四张 */
     .wrap .list li:nth-of-type(4) {
-        background: url(../img/首页轮播图2.jpg) center center no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E9%A6%96%E9%A1%B5%E8%BD%AE%E6%92%AD%E5%9B%BE2.jpg) center center no-repeat;
         background-size: cover;
     }
     .wrap .list li:nth-of-type(4) img {
@@ -1781,7 +1782,7 @@ html {
     }
     /* 第五张 */
     .wrap .list li:nth-of-type(5) {
-        background: url(../img/首页轮播图4.jpg) center center no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E9%A6%96%E9%A1%B5%E8%BD%AE%E6%92%AD%E5%9B%BE4.jpg) center center no-repeat;
         background-size: cover;
     }
     .wrap .list li:nth-of-type(5) img {
@@ -1804,7 +1805,7 @@ html {
     }
     /* 第六张 */
     .wrap .list li:nth-of-type(6) {
-        background: url(../img/首页轮播图5.jpg) center center no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E9%A6%96%E9%A1%B5%E8%BD%AE%E6%92%AD%E5%9B%BE5.jpg) center center no-repeat;
         background-size: cover;
     }
     .wrap .list li:nth-of-type(6) img {
@@ -1827,7 +1828,7 @@ html {
     }
     /* 第七张 */
     .wrap .list li:nth-of-type(7) {
-        background: url(../img/首页轮播图6.jpg) center center no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E9%A6%96%E9%A1%B5%E8%BD%AE%E6%92%AD%E5%9B%BE6.jpg) center center no-repeat;
         background-size: cover;
     }
     .wrap .list li:nth-of-type(7) img {
@@ -1867,12 +1868,12 @@ html {
     /* 轮播图左翻页按钮 */
     #goPre {
         left: 15px;
-        background: url(../img/左.svg) no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E5%B7%A6.svg) no-repeat;
     }
     /* 轮播图右翻页按钮 */
     #goNext {
         right: 0px;
-        background: url(../img/右.svg) no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E5%8F%B3.svg) no-repeat;
     }
     /* 轮播图下中位置按钮 */
     .pointList {
@@ -1907,7 +1908,7 @@ html {
         margin: 0 auto;
         display: flex;
         flex-direction: column;
-        background: url(../img/全部车型背景图.jpg) center center no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E5%85%A8%E9%83%A8%E8%BD%A6%E5%9E%8B%E8%83%8C%E6%99%AF%E5%9B%BE.jpg) center center no-repeat;
         background-size: cover;
     }
     #qbcx ul>li {
@@ -1963,19 +1964,19 @@ html {
         height: 40px;
     }
     #gcgj div ul:nth-of-type(1) li:nth-of-type(1) {
-        background: url(../img/购车工具1.svg) center center no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E8%B4%AD%E8%BD%A6%E5%B7%A5%E5%85%B71.svg) center center no-repeat;
         background-size: 20%;
     }
     #gcgj div ul:nth-of-type(2) li:nth-of-type(1) {
-        background: url(../img/购车工具2.svg) center center no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E8%B4%AD%E8%BD%A6%E5%B7%A5%E5%85%B72.svg) center center no-repeat;
         background-size: 20%;
     }
     #gcgj div ul:nth-of-type(3) li:nth-of-type(1) {
-        background: url(../img/购车工具3.svg) center center no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E8%B4%AD%E8%BD%A6%E5%B7%A5%E5%85%B73.svg) center center no-repeat;
         background-size: 20%;
     }
     #gcgj div ul:nth-of-type(4) li:nth-of-type(1) {
-        background: url(../img/购车工具4.svg) center center no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E8%B4%AD%E8%BD%A6%E5%B7%A5%E5%85%B74.svg) center center no-repeat;
         background-size: 20%;
     }
     #gcgj div ul li:nth-of-type(2) {
@@ -2001,7 +2002,7 @@ html {
         width: 100%;
         height: 174px;
         margin-bottom: 20px;
-        background: url(../img/首页轮播图2.jpg) center center no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E9%A6%96%E9%A1%B5%E8%BD%AE%E6%92%AD%E5%9B%BE2.jpg) center center no-repeat;
         background-size: cover;
     }
     #fxgd #fxgdOne ul {
@@ -2080,7 +2081,7 @@ html {
     /* 星友荟 */
     #fxgd #fxgdTwo div:nth-of-type(2) {
         width: 48%;
-        background: url(../img/星友荟.jpg) center no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E6%98%9F%E5%8F%8B%E8%8D%9F.jpg) center no-repeat;
         background-size: cover;
     }
     #fxgd #fxgdTwo div:nth-of-type(2) ul {
@@ -2112,7 +2113,7 @@ html {
     #fxgd #fxgdThree {
         width: 100%;
         height: 174px;
-        background: url(../img/星睿认证二手车.jpg) center center no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E6%98%9F%E7%9D%BF%E8%AE%A4%E8%AF%81%E4%BA%8C%E6%89%8B%E8%BD%A6.jpg) center center no-repeat;
         background-size: cover;
         margin-bottom: 20px;
     }
@@ -2149,7 +2150,7 @@ html {
         width: 100%;
         height: 174px;
         cursor: pointer;
-        background: url(../img/车主俱乐部.png)no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E8%BD%A6%E4%B8%BB%E4%BF%B1%E4%B9%90%E9%83%A8.png)no-repeat;
         background-size: cover;
         margin-bottom: 20px;
     }
@@ -2197,7 +2198,7 @@ html {
     /* 世界锦标赛 */
     #fxgd #fxgdFive div:nth-of-type(1) {
         width: 48%;
-        background: url(../img/奔驰F1.jpg) center no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E5%A5%94%E9%A9%B0F1.jpg) center no-repeat;
         background-size: cover;
     }
     #fxgd #fxgdFive div:nth-of-type(1) ul {
@@ -2231,7 +2232,7 @@ html {
     /* SUV征服之旅 */
     #fxgd #fxgdFive div:nth-of-type(2) {
         width: 48%;
-        background: url(../img/天地即征途.jpg) center center no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E5%A4%A9%E5%9C%B0%E5%8D%B3%E5%BE%81%E9%80%94.jpg) center center no-repeat;
         background-size: cover;
     }
     #fxgd #fxgdFive div:nth-of-type(2) ul {
@@ -2276,7 +2277,7 @@ html {
     /* 从心，认识奔驰 */
     #fxgd #fxgdSix div:nth-of-type(1) {
         width: 48%;
-        background: url(../img/从心，认识奔驰.jpg) center center no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E4%BB%8E%E5%BF%83%EF%BC%8C%E8%AE%A4%E8%AF%86%E5%A5%94%E9%A9%B0.jpg) center center no-repeat;
         background-size: cover;
     }
     #fxgd #fxgdSix div:nth-of-type(1) ul {
@@ -2313,7 +2314,7 @@ html {
     }
     #fxgd #fxgdSix div:nth-of-type(2) {
         width: 48%;
-        background: url(../img/奔驰杂志.jpg) center no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E5%A5%94%E9%A9%B0%E6%9D%82%E5%BF%97.jpg) center no-repeat;
         background-size: cover;
     }
     #fxgd #fxgdSix div:nth-of-type(2) ul {
@@ -2346,7 +2347,7 @@ html {
     #yysj>div {
         width: 100%;
         height: 414px;
-        background: url(../img/预约试驾.jpg) center center no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E9%A2%84%E7%BA%A6%E8%AF%95%E9%A9%BE.jpg) center center no-repeat;
         background-size: cover;
         position: relative;
     }
@@ -2508,7 +2509,7 @@ html {
         border: none;
         box-shadow: none;
         cursor: pointer;
-        background: url(../img/右下角联系我们.png)center center no-repeat;
+        background: url(http://q6ayyk4mw.bkt.clouddn.com/%E5%8F%B3%E4%B8%8B%E8%A7%92%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC.png)center center no-repeat;
         background-size: cover;
     }
 }

@@ -126,7 +126,7 @@ html {
     position: relative;
     top: 30px;
     right: 330px;
-    background: url(../img/navBar分隔.png) center 0% no-repeat;
+    background: url(http://q6ayyk4mw.bkt.clouddn.com/navBar%E5%88%86%E9%9A%94.png) center 0% no-repeat;
 }
 
 
@@ -417,8 +417,6 @@ html {
     height: 60px;
     background: #222222;
     position: relative;
-    /* margin-top: 108px; */
-    /* z-index: 100000; */
 }
 
 #search input {
@@ -426,7 +424,7 @@ html {
     height: 36px;
     margin-top: 10px;
     padding-left: 30px;
-    background: url(../img/searchBar搜索.svg) no-repeat left;
+    background: url(http://q6ayyk4mw.bkt.clouddn.com/searchBar%E6%90%9C%E7%B4%A2.svg) no-repeat left;
     background-size: 10%;
     float: left;
     position: absolute;
@@ -446,7 +444,7 @@ html {
     width: 32px;
     height: 32px;
     float: left;
-    background: url(../img/searchBar黑右箭头.svg) no-repeat #666666;
+    background: url(http://q6ayyk4mw.bkt.clouddn.com/searchBar%E9%BB%91%E5%8F%B3%E7%AE%AD%E5%A4%B4.svg) no-repeat #666666;
     background-position: center;
     margin-top: 12px;
     margin-left: 20px;
@@ -664,7 +662,7 @@ html {
 
 #goPre {
     left: 30px;
-    background: url(../img/左.svg) no-repeat;
+    background: url(http://q6ayyk4mw.bkt.clouddn.com/%E5%B7%A6.svg) no-repeat;
 }
 
 
@@ -672,7 +670,7 @@ html {
 
 #goNext {
     right: 30px;
-    background: url(../img/右.svg) no-repeat;
+    background: url(http://q6ayyk4mw.bkt.clouddn.com/%E5%8F%B3.svg) no-repeat;
 }
 
 
@@ -972,7 +970,7 @@ html {
     display: block;
     width: 305px;
     height: 35px;
-    background: url(../img/search.svg) 10px center no-repeat;
+    background: url(http://q6ayyk4mw.bkt.clouddn.com/search.svg) 10px center no-repeat;
     line-height: 35px;
     padding-left: 30px;
     margin: 0px auto;
@@ -1044,7 +1042,7 @@ html {
 
 #mapLeft #jxs ul {
     cursor: pointer;
-    background: url(../img/红下拉.svg) 330px center no-repeat;
+    background: url(http://q6ayyk4mw.bkt.clouddn.com/%E7%BA%A2%E4%B8%8B%E6%8B%89.svg) 330px center no-repeat;
 }
 
 #mapLeft #jxs ul li {
@@ -1054,7 +1052,7 @@ html {
     list-style: circle;
     margin-left: 8px;
     padding-right: 15px;
-    background: url(../img/白原点.svg) right center no-repeat;
+    background: url(http://q6ayyk4mw.bkt.clouddn.com/%E7%99%BD%E5%8E%9F%E7%82%B9.svg) right center no-repeat;
 }
 
 #AMGThree {
@@ -1137,7 +1135,7 @@ html {
 
 #AMGThree>div:nth-of-type(2) ul li input:checked+label {
     color: #CC0000;
-    background: url(../img/斜体.svg) left center no-repeat;
+    background: url(http://q6ayyk4mw.bkt.clouddn.com/%E6%96%9C%E4%BD%93.svg) left center no-repeat;
 }
 
 #AMGThree>div:nth-of-type(2) ul li input:checked~.AMGgsBody {
@@ -1257,7 +1255,7 @@ html {
 
 #AMGThree>div:nth-of-type(4) ul li input:checked+label {
     color: #CC0000;
-    background: url(../img/斜体.svg) left center no-repeat;
+    background: url(http://q6ayyk4mw.bkt.clouddn.com/%E6%96%9C%E4%BD%93.svg) left center no-repeat;
 }
 
 #AMGThree>div:nth-of-type(4) ul li input:checked~.AMGgusBody {
@@ -1374,7 +1372,7 @@ html {
 
 #AMGThree>div:nth-of-type(6) ul li input:checked+label {
     color: #CC0000;
-    background: url(../img/斜体.svg) left center no-repeat;
+    background: url(http://q6ayyk4mw.bkt.clouddn.com/%E6%96%9C%E4%BD%93.svg) left center no-repeat;
 }
 
 #AMGThree>div:nth-of-type(6) ul li input:checked~.AMGgcjsBody {
@@ -1474,7 +1472,7 @@ html {
 
 #AMGThree>div:nth-of-type(2)>ul>li:nth-of-type(2)>.AMGgsBody>div .cover::after {
     content: "";
-    background: url(../img/打造AMG.png)left center no-repeat;
+    background: url(http://q6ayyk4mw.bkt.clouddn.com/%E6%89%93%E9%80%A0AMG.png)left center no-repeat;
     background-size: contain;
     opacity: 0.1;
     top: 0;
@@ -1487,7 +1485,7 @@ html {
 
 #AMGThree>div:nth-of-type(2)>ul>li:nth-of-type(3)>.AMGgsBody>div .cover::after {
     content: "";
-    background: url(../img/发现AMG.png)left center no-repeat;
+    background: url(http://q6ayyk4mw.bkt.clouddn.com/%E5%8F%91%E7%8E%B0AMG.png)left center no-repeat;
     background-size: contain;
     opacity: 0.1;
     top: 0;
@@ -1500,7 +1498,7 @@ html {
 
 #AMGThree>div:nth-of-type(2)>ul>li:nth-of-type(4)>.AMGgsBody>div .cover::after {
     content: "";
-    background: url(../img/一人一机.png)left center no-repeat;
+    background: url(http://q6ayyk4mw.bkt.clouddn.com/%E4%B8%80%E4%BA%BA%E4%B8%80%E6%9C%BA.png)left center no-repeat;
     background-size: contain;
     opacity: 0.1;
     top: 0;
@@ -1562,7 +1560,7 @@ html {
     cursor: pointer;
     margin: 0;
     border-radius: 50%;
-    background: url(../img/关闭黑.svg) center center no-repeat;
+    background: url(http://q6ayyk4mw.bkt.clouddn.com/%E5%85%B3%E9%97%AD%E9%BB%91.svg) center center no-repeat;
     background-size: cover;
 }
 
@@ -1580,7 +1578,7 @@ html {
 
 #AMGThree>div:nth-of-type(4)>ul>li>.AMGgusBody>div .cover::after {
     content: "";
-    background: url(../img/故事起点.png)right center no-repeat;
+    background: url(http://q6ayyk4mw.bkt.clouddn.com/%E6%95%85%E4%BA%8B%E8%B5%B7%E7%82%B9.png)right center no-repeat;
     background-size: contain;
     opacity: 0.1;
     top: 0;
@@ -1593,7 +1591,7 @@ html {
 
 #AMGThree>div:nth-of-type(4)>ul>li:nth-of-type(2)>.AMGgusBody>div .cover::after {
     content: "";
-    background: url(../img/故事发展.png)right center no-repeat;
+    background: url(http://q6ayyk4mw.bkt.clouddn.com/%E6%95%85%E4%BA%8B%E5%8F%91%E5%B1%95.png)right center no-repeat;
     background-size: contain;
     opacity: 0.1;
     top: 0;
@@ -1606,7 +1604,7 @@ html {
 
 #AMGThree>div:nth-of-type(4)>ul>li:nth-of-type(3)>.AMGgusBody>div .cover::after {
     content: "";
-    background: url(../img/加入大家庭.png)right center no-repeat;
+    background: url(http://q6ayyk4mw.bkt.clouddn.com/%E5%8A%A0%E5%85%A5%E5%A4%A7%E5%AE%B6%E5%BA%AD.png)right center no-repeat;
     background-size: contain;
     opacity: 0.1;
     top: 0;
@@ -1619,7 +1617,7 @@ html {
 
 #AMGThree>div:nth-of-type(4)>ul>li:nth-of-type(4)>.AMGgusBody>div .cover::after {
     content: "";
-    background: url(../img/今日AMG.png)right center no-repeat;
+    background: url(http://q6ayyk4mw.bkt.clouddn.com/%E4%BB%8A%E6%97%A5AMG.png)right center no-repeat;
     background-size: contain;
     opacity: 0.1;
     top: 0;
@@ -1688,7 +1686,7 @@ html {
     cursor: pointer;
     margin: 0;
     border-radius: 50%;
-    background: url(../img/关闭黑.svg) center center no-repeat;
+    background: url(http://q6ayyk4mw.bkt.clouddn.com/%E5%85%B3%E9%97%AD%E9%BB%91.svg) center center no-repeat;
     background-size: cover;
 }
 
@@ -2103,7 +2101,7 @@ html {
     bottom: 20%;
     z-index: 100;
     cursor: pointer;
-    background: url(../img/右下角联系我们.png)center center no-repeat;
+    background: url(http://q6ayyk4mw.bkt.clouddn.com/%E5%8F%B3%E4%B8%8B%E8%A7%92%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC.png)center center no-repeat;
     background-size: cover;
 }
 
