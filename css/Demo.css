@@ -127,7 +127,7 @@ body {
 }
 
 .logo:before {
-    content: '\f1e0';
+    content: '\f007';
     font-family: fontAwesome;
     position: absolute;
     width: 100%;
