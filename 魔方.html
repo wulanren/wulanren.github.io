@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>翻转魔方</title>
+    <link rel="stylesheet" type="text/css" href="css/魔方/cube.css">
+    <link rel="stylesheet" type="text/css" href="css/魔方/doodle2.css">
+    <link rel="stylesheet" type="text/css" href="css/魔方/certificate2.css">
+    <link rel="icon" type="text/css" href="http://q6ayyk4mw.bkt.clouddn.com/%E9%AD%94%E6%96%B9.svg" />
+    <style>
+        .wrap {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 20px;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            box-shadow: 0 0 9px red;
+        }
+        
+        #timer {
+            position: absolute;
+            top: 90px;
+            left: 60px;
+            font-size: 38px;
+        }
+        
+        #btn {
+            position: absolute;
+            top: 180px;
+            left: 70px;
+            font-size: 30px;
+        }
+        
+        #btn button {
+            width: 80px;
+            font-size: 28px;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+    <!-- compiled & minified cube code -->
+    <script charset="utf-8" src="js/魔方/tween.r12.js"></script>
+    <script charset="utf-8" src="js/魔方/three.js"></script>
+    <script charset="utf-8" src="js/魔方/cuber.min.js"></script>
+
+</head>
+
+<body>
+    <div id="bg"></div>
+    <div id="container"></div>
+    <div id="fail">
+        <img src="http://q6ayyk4mw.bkt.clouddn.com/static-cube.png">
+        <div id="upgradeText" class="bubble fadeTransition">
+            <div class="upgradetext">您当前浏览器无法支持，请使用以下：Chrome，FierFox，Safari</div>
+            <br>
+            <a class="upgradetext" href="https://www.google.com/chrome/browser/" target="_blank">Chrome</a><br>
+            <a class="upgradetext" href="https://www.mozilla.org/firefox" target="_blank">Firefox</a><br>
+            <a class="upgradetext" href="https://www.apple.com/safari" target="_blank">Safari</a><br>
+            <span class="pointerleft SPRITE_carrot_down_2x"></span>
+        </div>
+    </div>
+    <div id="uipanel" class="fadeTransition" style="display:none">
+        <div id="movecounter">0</div>
+        <div id="buttonpanel">
+            <div id="sharebubble" class="fadeTransition" style="opacity:0">
+                <input id="shareshortlink" type="text" value="google.com/doodles" readonly/>
+                <div id="sharegplus" class="bubbleicon SPRITE_google_plus_64_2x"></div>
+                <div id="sharefacebook" class="bubbleicon SPRITE_facebook_64_2x"></div>
+                <div id="sharetwitter" class="bubbleicon SPRITE_twitter_64_2x"></div>
+                <div id="shareemail" class="bubbleicon SPRITE_email_64_2x"></div>
+            </div>
+            <div id="uibuttons">
+                <div id="sharebutton" class="bubbleicon SPRITE_share_64_2x"></div>
+                <div id="helpbutton" class="bubbleicon SPRITE_help_64_2x"></div>
+                <div id="searchbutton" class="bubbleicon SPRITE_search_64_2x"></div>
+            </div>
+        </div>
+        <div id="helpbubble" class="bubble" style="display:none">
+            <span class="pointerup SPRITE_carrot_grey_up_2x"></span>
+            <div id="helpimage" class="one"></div>
+            <div id="helptext" class="helptext"></div>
+            <div id="helpnext" class="helptext"></div>
+            <span class="pointerdown SPRITE_carrot_down_2x"></span><br>
+        </div>
+    </div>
+    <div class="wrap">
+        <div id="timer">
+            <span id="hours">00</span>
+            <span>:</span>
+            <span id="minute">00</span>
+            <span>:</span>
+            <span id="second">00</span>
+        </div>
+
+        <div id="btn">
+            <button id="begin">开始</button>
+            <button id="pause">暂停</button>
+        </div>
+    </div>
+
+    <script charset="utf-8" src="js/魔方/iecss3d.js"></script>
+    <script charset="utf-8" src="js/魔方/ierenderer.js"></script>
+    <script charset="utf-8" src="js/魔方/deviceMotion.js"></script>
+    <script charset="utf-8" src="js/魔方/locked.js"></script>
+    <!-- Certificate js -->
+    <script charset="utf-8" src="js/魔方/textBox.js"></script>
+    <script charset="utf-8" src="js/魔方/ResizeableTextBox.3.js"></script>
+    <script charset="utf-8" src="js/魔方/divBox.js"></script>
+    <script charset="utf-8" src="js/魔方/frames.js"></script>
+    <script charset="utf-8" src="js/魔方/certificate.js"></script>
+    <script charset="utf-8" src="js/魔方/main3.js"></script>
+    <script>
+        window.onload = function() {
+            var hours = document.getElementById("hours"),
+                minute = document.getElementById("minute"),
+                second = document.getElementById("second"),
+                begin = document.getElementById("begin"),
+                pause = document.getElementById("pause"),
+                timer = null,
+                Hours = 0,
+                Minute = 0,
+                Second = 0;
+
+            begin.onclick = function() {
+                timer = setInterval(function() {
+                    Second++;
+                    if (Second > 59) {
+                        Second = 0;
+                        Minute++;
+                        if (Minute > 59) {
+                            Minute = 0;
+                            Hours++;
+                        }
+                    }
+
+
+                    if (Second < 10) {
+                        second.innerText = "0" + Second;
+                    } else {
+                        second.innerText = Second;
+                    }
+
+
+                    if (Minute < 10) {
+                        minute.innerText = "0" + Minute;
+                    } else {
+                        minute.innerText = Minute;
+                    }
+
+
+                    if (Hours < 10) {
+                        hours.innerText = "0" + Hours;
+                    } else {
+                        hours.innerText = Hours;
+                    }
+                }, 1000)
+            }
+
+
+            pause.onclick = function() {
+                clearInterval(timer);
+            }
+        }
+    </script>
+</body>
+
+</html>
