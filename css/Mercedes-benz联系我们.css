@@ -84,7 +84,7 @@
             right: -50px;
             text-align: center;
             line-height: 16px;
-            background: url(../img/navBar分隔.png) no-repeat center;
+            background: url(http://q6ayyk4mw.bkt.clouddn.com/navBar%E5%88%86%E9%9A%94.png) no-repeat center;
             background-size: 20px;
         }
         #navBar ul p a {
@@ -147,7 +147,7 @@
             top: -200px;
         }
         #lxwm form {
-            background: url('../img/letter_bg.png');
+            background: url('http://q6ayyk4mw.bkt.clouddn.com/letter_bg.png');
             position: relative;
             top: 200px;
             overflow: hidden;
@@ -186,7 +186,7 @@
         }
         #lxwm textarea:focus,
         #lxwm input[type=text]:focus {
-            background: url('../img/letter_bg.png');
+            background: url('http://q6ayyk4mw.bkt.clouddn.com/letter_bg.png');
         }
         #lxwm #form-wrap input[type=submit] {
             position: relative;
@@ -264,7 +264,7 @@
             position: absolute;
             top: 40%;
             right: 20px;
-            background: url(../img/更多.svg) no-repeat;
+            background: url(http://q6ayyk4mw.bkt.clouddn.com/%E6%9B%B4%E5%A4%9A.svg) no-repeat;
         }
         #lxwm {
             width: 100%;
@@ -310,7 +310,7 @@
             top: -150px;
         }
         #lxwm form {
-            background: url('../img/letter_bg.png');
+            background: url('http://q6ayyk4mw.bkt.clouddn.com/letter_bg.png');
             position: relative;
             top: 150px;
             overflow: hidden;
@@ -354,7 +354,7 @@
         }
         #lxwm textarea:focus,
         #lxwm input[type=text]:focus {
-            background: url('../img/letter_bg.png');
+            background: url('http://q6ayyk4mw.bkt.clouddn.com/letter_bg.png');
         }
         #lxwm #form-wrap input[type=submit] {
             position: relative;
