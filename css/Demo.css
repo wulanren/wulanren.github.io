@@ -127,7 +127,7 @@ body {
 }
 
 .logo:before {
-    content: '\f007';
+    content: '\f1e0';
     font-family: fontAwesome;
     position: absolute;
     width: 100%;
@@ -335,7 +335,6 @@ body {
 }
 
 .zdjs .zdjscard:hover .face.face1 {
-    /*此处为card标签悬停时，内容1复位*/
     background: #ff0057;
     transform: translateY(0);
 }
@@ -654,7 +653,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
-    background: url(../img/小米01.jpg)center no-repeat;
+    background: url(http://q6ayyk4mw.bkt.clouddn.com/%E5%B0%8F%E7%B1%B301.jpg)center no-repeat;
     background-size: cover;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
