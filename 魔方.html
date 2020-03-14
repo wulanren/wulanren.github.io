@@ -9,6 +9,39 @@
     <link rel="stylesheet" type="text/css" href="http://q6ayyk4mw.bkt.clouddn.com/doodle2.css">
     <link rel="stylesheet" type="text/css" href="http://q6ayyk4mw.bkt.clouddn.com/certificate2.css">
     <link rel="icon" type="text/css" href="http://q6ayyk4mw.bkt.clouddn.com/%E9%AD%94%E6%96%B9.svg" />
+    <style>
+        .wrap {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 20px;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            box-shadow: 0 0 9px red;
+        }
+        
+        #timer {
+            position: absolute;
+            top: 90px;
+            left: 60px;
+            font-size: 38px;
+        }
+        
+        #btn {
+            position: absolute;
+            top: 180px;
+            left: 70px;
+            font-size: 30px;
+        }
+        
+        #btn button {
+            width: 80px;
+            font-size: 28px;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
     <!-- compiled & minified cube code -->
     <script charset="utf-8" src="js/魔方/tween.r12.js"></script>
     <script charset="utf-8" src="http://q6ayyk4mw.bkt.clouddn.com/three.js"></script>
@@ -16,17 +49,12 @@
 </head>
 
 <body>
-    <!-- 吴烂人 -->
     <div id="bg"></div>
     <div id="container"></div>
     <div id="fail">
         <img src="http://q6ayyk4mw.bkt.clouddn.com/static-cube.png">
         <div id="upgradeText" class="bubble fadeTransition">
-            <div class="upgradetext">您当前浏览器无法支持，请使用以下：Chrome，FierFox，Safari</div>
-            <br>
-            <a class="upgradetext" href="https://www.google.com/chrome/browser/" target="_blank">Chrome</a><br>
-            <a class="upgradetext" href="https://www.mozilla.org/firefox" target="_blank">Firefox</a><br>
-            <a class="upgradetext" href="https://www.apple.com/safari" target="_blank">Safari</a><br>
+            <div class="upgradetext">您网络有问题，或者当前浏览器无法支持，请使用以下：<a href="#">Chrome</a> ，<a href="#">FierFox</a> ，<a href="#">Safari</a> </div>
             <span class="pointerleft SPRITE_carrot_down_2x"></span>
         </div>
     </div>
