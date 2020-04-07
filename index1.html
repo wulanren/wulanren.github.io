@@ -1,58 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/wulanren.css">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>翻转魔方</title>
+    <link rel="stylesheet" type="text/css" href="css/魔方/cube.css">
+    <link rel="stylesheet" type="text/css" href="css/魔方/doodle2.css">
+    <link rel="stylesheet" type="text/css" href="css/魔方/certificate2.css">
+    <link rel="icon" type="text/css" href="http://q6ayyk4mw.bkt.clouddn.com/%E9%AD%94%E6%96%B9.svg" />
+    <!-- compiled & minified cube code -->
+    <script charset="utf-8" src="js/魔方/123.js"></script>
+    <script charset="utf-8" src="js/魔方/three.js"></script>
+    <script charset="utf-8" src="js/魔方/cuber.min.js"></script>
 </head>
 
 <body>
-    <div class="quanping">
-        <div class="fenye">
-            <div class="grzlkBox">
-                <div class="grzlkTop">
-                    <div class="tx">
-                        <!-- 头像 -->
-                        <img src="http://q6ayyk4mw.bkt.clouddn.com/%E6%9C%80%E5%B8%85%E4%BA%8C%E5%93%88.jpg" alt="">
-                    </div>
-                    <div class="name">吴舒桐</div>
-                    <div class="English">WUSHUTONG</div>
-                </div>
-                <div class="grzlkBottom">
-                    <!-- 社交平台logo -->
-                    <ul class="logo">
-                        <li>
-                            <a href="http://wpa.qq.com/msgrd?v=3&uin=49032320&site=qq&menu=yes" title="49032320" target="_blank" title="单击找我聊天"><img src="http://q6ayyk4mw.bkt.clouddn.com/QQ.svg" alt=""></a>
-                        </li>
-                        <li>
-                            <a href="#" title="WST439211911"><img src="http://q6ayyk4mw.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1.svg" alt=""></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="http://q6ayyk4mw.bkt.clouddn.com/github.svg" alt=""></a>
-                        </li>
-                        <li>
-                            <a href="mailto:wu49032320@iCloud.com" title="wu49032320@iCloud.com"><img src="http://q6ayyk4mw.bkt.clouddn.com/%E8%8B%B9%E6%9E%9C.svg" alt=""></a>
-                        </li>
-                        <li>
-                            <a href="mailto:wu49032320@Gmail.com" title="wu49032320@Gmail.com"><img src="http://q6ayyk4mw.bkt.clouddn.com/gmail.svg" alt=""></a>
-                        </li>
-                    </ul>
-                    <div>S1T6018<span>Class</span></div>
-                    <div></div>
-                    <div class="benz">
-                        <a href="#" title="项目正在准备中"> Mercedes-benz</a>
-                        <span>Project</span></div>
-                    <div class="benz">
-                        <a href="魔方.html" title="项目正在准备中">魔方</a>
-                        <span>Project</span></div>
-                </div>
-            </div>
+    <div id="bg"></div>
+    <div id="container"></div>
+    <div id="fail">
+        <img src="http://q6ayyk4mw.bkt.clouddn.com/static-cube.png">
+        <div id="upgradeText" class="bubble fadeTransition">
+            <div class="upgradetext">您网络有问题，或者当前浏览器无法支持，请使用以下：<a href="#">Chrome</a> ，<a href="#">FierFox</a> ，<a href="#">Safari</a> </div>
+            <span class="pointerleft SPRITE_carrot_down_2x"></span>
         </div>
     </div>
-
+    <div id="uipanel" class="fadeTransition" style="display:none">
+        <div id="movecounter">0</div>
+        <div id="buttonpanel">
+            <div id="sharebubble" class="fadeTransition" style="opacity:0">
+                <input id="shareshortlink" type="text" value="google.com/doodles" readonly/>
+                <div id="sharegplus" class="bubbleicon SPRITE_google_plus_64_2x"></div>
+                <div id="sharefacebook" class="bubbleicon SPRITE_facebook_64_2x"></div>
+                <div id="sharetwitter" class="bubbleicon SPRITE_twitter_64_2x"></div>
+                <div id="shareemail" class="bubbleicon SPRITE_email_64_2x"></div>
+            </div>
+            <div id="uibuttons">
+                <div id="sharebutton" class="bubbleicon SPRITE_share_64_2x"></div>
+                <div id="helpbutton" class="bubbleicon SPRITE_help_64_2x"></div>
+                <div id="searchbutton" class="bubbleicon SPRITE_search_64_2x"></div>
+            </div>
+        </div>
+        <div id="helpbubble" class="bubble" style="display:none">
+            <span class="pointerup SPRITE_carrot_grey_up_2x"></span>
+            <div id="helpimage" class="one"></div>
+            <div id="helptext" class="helptext"></div>
+            <div id="helpnext" class="helptext"></div>
+            <span class="pointerdown SPRITE_carrot_down_2x"></span><br>
+        </div>
+    </div>
+    <script charset="utf-8" src="js/魔方/.js"></script>
+    <script charset="utf-8" src="js/魔方/.js"></script>
+    <script charset="utf-8" src="js/魔方/deviceMotion.js"></script>
+    <script charset="utf-8" src="js/魔方/locked.js"></script>
+    <!-- Certificate js -->
+    <script charset="utf-8" src="js/魔方/textBox.js"></script>
+    <script charset="utf-8" src="js/魔方/ResizeableTextBox.3.js"></script>
+    <script charset="utf-8" src="js/魔方/divBox.js"></script>
+    <script charset="utf-8" src="js/魔方/frames.js"></script>
+    <script charset="utf-8" src="js/魔方/certificate.js"></script>
+    <script charset="utf-8" src="js/魔方/main3.js"></script>
 </body>
 
 </html>
