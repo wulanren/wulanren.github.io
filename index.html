@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="libs/scrollReveal/scrollreveal.min.js"></script>
+    <link rel="stylesheet" href="libs/glide/glide.core.min.css" />
+    <link rel="stylesheet" href="libs/glide/glide.theme.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="text/css" href="https://www.zh8177.top/%E6%9C%80%E5%B8%85%E4%BA%8C%E5%93%88.jpg" />
+    <title>吴烂人</title>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header class="dhl">
+        <div class="wulanren">吴烂人</div>
+        <!-- 导航 -->
+        <nav>
+            <a href="#">首页</a>
+            <a href="#gybz">关于本站</a>
+            <a href="#footer">备案信息</a>
+            <a href="Rubik's cube.html">魔方小游戏</a>
+        </nav>
+        <!-- 折叠导航按钮 -->
+        <div class="burger">
+            <div class="burger-line1"></div>
+            <div class="burger-line2"></div>
+            <div class="burger-line3"></div>
+        </div>
+    </header>
+    <!-- 首页图片轮播，使用glide JS插件 -->
+    <div class="glide">
+        <!-- 轮播轨道 -->
+        <div class="glide__track" data-glide-el="track">
+            <!-- 所有轮播容器 -->
+            <div class="glide__slides">
+                <!-- 单个轮播组件 -->
+                <div class="glide__slide">
+                    <!-- 轮播标题 -->
+                    <div class="slide-caption">
+                        <h1>唯有最好</h1>
+                        <h3>
+                            The best or onthing.
+                        </h3>
+                        <!-- 探索按钮 -->
+                        <button class="explore-btn" onclick="window.open('Mercedes-benz.html')">查看更多</button>
+                    </div>
+                    <!-- 背景遮罩 -->
+                    <div class="backdrop"></div>
+                    <!-- 轮播图片 -->
+                    <img src="https://www.zh8177.top/AMG%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC%E8%83%8C%E6%99%AF%E5%9B%BE.jpg" alt="" />
+                </div>
+                <!-- 第二张轮播 -->
+                <div class="glide__slide">
+                    <div class="slide-caption left">
+                        <h1>一刻永难忘</h1>
+                        <h3>
+                            从动力传动系统的独特设计到精心打造，从微妙的细节将车身打造至趋近完美。
+                        </h3>
+                        <button class="explore-btn" onclick="window.open('Mercedes-AMG.html')">查看更多</button>
+                    </div>
+                    <div class="backdrop"></div>
+                    <!-- 轮播视频 -->
+                    <video src="https://www.zh8177.top/AMG.mp4" muted autoplay loop></video>
+                </div>
+            </div>
+        </div>
+        <!-- glide 控制按钮 -->
+        <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+          <
+        </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+          >
+        </button>
+        </div>
+        <!-- glide 控制圆点 -->
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+        </div>
+    </div>
+    <!-- 内容容器 -->
+    <div class="content-wrapper">
+        <!-- 关于我们， id用来导航菜单跳转 -->
+        <section id="gybz" class="gybz">
+            <!-- 标题 -->
+            <h2 class="title1">关于本站</h2>
+            <!-- 补充说明区域 -->
+            <p class="intro">
+                本站仅用于学习交流,非盈利目的。
+            </p>
+            <p class="intro">
+                如有侵权，请务必联系 <span style="color: #FF434F; cursor: pointer;">WU49032320@ICLOUD.COM</span>
+            </p>
+        </section>
+    </div>
+    <!-- 底部信息 -->
+    <footer id="footer">
+        <!-- 底部菜单 -->
+        <div class="footer-menus">
+            <div class="contact-us">
+                <p class="menu-title">联系我</p>
+                <p>地址：中国山西省运城市</p>
+                <p>QQ:49032320</p>
+                <p>电子邮箱：WU49032320@GMAIL.COM</p>
+                <p>电子邮箱：WU49032320@ICLOUD.COM</p>
+            </div>
+            <div class="baxx">
+                <p class="ICP" onclick="window.open('http://www.miit.gov.cn/')">
+                    晋ICP备20003303号
+                </p>
+                <p class="ICP">Mercedes-benz 商标归<span> &copy;梅赛德斯-奔驰</span> 公司所有</p>
+                <p class="ICP">魔方小游戏 商标归<span> &copy;Google LLC</span> 公司所有</p>
+            </div>
+        </div>
+    </footer>
+    <script src="libs/glide/glide.min.js"></script>
+    <script src="libs/isotope/isotope.pkgd.min.js"></script>
+    <script src="libs/anime/anime.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

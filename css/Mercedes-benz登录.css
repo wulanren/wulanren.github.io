@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+/* PC端 */
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 3000px) {
+    #navBar a {
+        margin-right: 16%;
+    }
+    #navBar a img {
+        width: 60%;
+    }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f6f5f7;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: url(https://www.zh8177.top/%E5%A4%A9%E5%9C%B0%E5%8D%B3%E5%BE%81%E9%80%94.jpg) center center no-repeat;
+        height: 100vh;
+    }
+    h1 {
+        font-weight: bold;
+        font-size: 24px;
+        margin: 20px;
+    }
+    p {
+        font-size: 14px;
+        font-weight: 100;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+        margin: 20px 0 30px;
+    }
+    span {
+        font-size: 12px;
+    }
+    a {
+        color: #333;
+        font-size: 14px;
+        text-decoration: none;
+        margin: 15px 0;
+    }
+    /* 登录的盒子 */
+    .container {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        position: relative;
+        overflow: hidden;
+        width: 768px;
+        max-width: 100%;
+        min-height: 480px;
+    }
+    .form-container form {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        padding: 0 30px;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .social-container {
+        margin: 10px 0;
+    }
+    .social-container a {
+        border: 1px solid #ddd;
+        border-radius: 50%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 5px;
+        height: 40px;
+        width: 40px;
+    }
+    .form-container input {
+        background: #eee;
+        border: none;
+        padding: 12px 15px;
+        margin: 5px 0;
+        width: 100%;
+    }
+    button {
+        border-radius: 20px;
+        border: 1px solid #00adef;
+        background: #00adef;
+        color: #fff;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 12px 45px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: transform 80ms ease-in;
+    }
+    button:active {
+        transform: scale(0.95);
+    }
+    button:focus {
+        outline: none;
+    }
+    button.ghost {
+        background: transparent;
+        border-color: #fff;
+    }
+    .form-container {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        transition: all 0.6s ease-out;
+    }
+    /* 登录 */
+    .sign-in-container {
+        left: 0;
+        width: 50%;
+        z-index: 2;
+    }
+    /* 盒子 */
+    .sign-up-container {
+        left: 0;
+        width: 50%;
+        opacity: 0;
+        z-index: 1;
+    }
+    /* overlay-container */
+    .overlay-container {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        transition: transform 0.6s ease-in-out;
+        z-index: 100;
+    }
+    .overlay {
+        background: linear-gradient(to left, black, gray, #efefef) no-repeat 0 0/cover;
+        color: #fff;
+        height: 100%;
+        width: 200%;
+        position: relative;
+        left: -100%;
+        transform: translateX(0);
+        transition: transform 0.6s ease-in-out;
+    }
+    .overlay-panel {
+        position: absolute;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 50%;
+        padding: 0 40px;
+        text-align: center;
+        transform: translateX(0);
+        transition: transform 0.6s ease-in-out;
+    }
+    .overlay-right {
+        right: 0;
+        transform: translateX(0);
+    }
+    .overlay-left {
+        transform: translateX(-20%);
+    }
+    /* 向右移动登录 */
+    .container.right-panel-active .sign-in-container {
+        transform: translateX(100%);
+    }
+    /* 向左移动顶层 */
+    .container.right-panel-active .overlay-container {
+        transform: translateX(-100%);
+    }
+    /* bring sign up over sign in */
+    .container.right-panel-active .sign-up-container {
+        opacity: 1;
+        z-index: 5;
+        transform: translateX(100%);
+    }
+    /* 登录到注册    向右移动 */
+    .container.right-panel-active .overlay {
+        transform: translateX(50%);
+    }
+    .container.right-panel-active .overlay-left {
+        transform: translateX(0);
+    }
+    .container.right-panel-active .overlay-right {
+        transform: translateX(20%);
+    }
+    #ydddl {
+        display: none;
+    }
+    #banquan {
+        position: fixed;
+        bottom: 0px;
+    }
+}
+
+
+/* 移动端 */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+    #container {
+        display: none;
+    }
+    #navBar {
+        position: static;
+    }
+    #navBar a {
+        margin-left: 10px;
+    }
+    #navBar a img {
+        width: 50%;
+    }
+    #ydddl {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #ydddl #ydddlBody a {
+        color: #00adef;
+        font-size: 13px;
+    }
+    #ydddl #ydddlBody>ul:nth-of-type(1) {
+        width: 95%;
+        height: 260px;
+        margin: 0 auto;
+    }
+    #ydddl #ydddlBody>ul:nth-of-type(1)>p {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        margin: 20px 0;
+        font-size: 20px;
+    }
+    #ydddl #ydddlBody>ul:nth-of-type(1) li {
+        position: relative;
+    }
+    #ydddl #ydddlBody>ul:nth-of-type(1) li>input {
+        display: none;
+    }
+    #ydddl #ydddlBody>ul:nth-of-type(1) li>label {
+        float: left;
+        margin: 0 45px;
+        text-align: 18px;
+        padding: 10px 0px;
+        transform: scaleX(0.7);
+        text-align: center;
+    }
+    #ydddl #ydddlBody>ul:nth-of-type(1) li>input:checked+label {
+        color: #00adef;
+        border-bottom: solid 2px #00adef;
+    }
+    #ydddl #ydddlBody>ul:nth-of-type(1) li .content {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        left: 0;
+        top: 65px;
+        width: 100%;
+    }
+    #ydddl #ydddlBody>ul:nth-of-type(1) li input:checked~.content {
+        opacity: 1;
+        transition: opacity 1s;
+        visibility: visible;
+    }
+    /*手机快捷登录*/
+    #ydddl #ydddlBody>ul:nth-of-type(1) li:nth-of-type(1)>div input {
+        width: 100%;
+        border: none;
+        padding: 10px 8px;
+    }
+    #ydddl #ydddlBody>ul:nth-of-type(1) li:nth-of-type(1)>div input:focus {
+        outline: none;
+    }
+    #ydddl #ydddlBody>ul:nth-of-type(1) li:nth-of-type(1)>div p {
+        border-bottom: 1px solid #E6E6E6;
+        margin: 20px 0px;
+    }
+    #ydddl #ydddlBody>ul:nth-of-type(1) li:nth-of-type(1)>div p a {
+        position: absolute;
+        top: 8px;
+        right: 10px;
+    }
+    /*密码登录*/
+    #ydddl #ydddlBody>ul:nth-of-type(1) li:nth-of-type(2)>div input {
+        width: 100%;
+        border: none;
+        padding: 10px 8px;
+    }
+    #ydddl #ydddlBody>ul:nth-of-type(1) li:nth-of-type(2)>div input:focus {
+        outline: none;
+    }
+    #ydddl #ydddlBody>ul:nth-of-type(1) li:nth-of-type(2)>div p {
+        border-bottom: 1px solid #E6E6E6;
+        margin: 20px 0px;
+    }
+    #ydddl #ydddlBody>ul:nth-of-type(1) li:nth-of-type(2)>div p a {
+        position: absolute;
+        top: 8px;
+        right: 10px;
+    }
+    #ydddl #ydddlBody>div button {
+        width: 95%;
+        height: 40px;
+        margin: 0 auto;
+        line-height: 40px;
+        display: block;
+        text-align: center;
+        font-size: 14px;
+        border: none;
+        background: #00adef;
+        color: white;
+    }
+    #ydddl #ydddlBody>div p {
+        margin: 20px 0px 30px 0px;
+        width: 100%;
+    }
+    #ydddl #ydddlBody>div p:nth-of-type(1) a {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        font-size: 14px;
+        color: #00adef;
+        text-align: center;
+    }
+    #ydddl #ydddlBody>div p:nth-of-type(2) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #ydddl #ydddlBody>div p:nth-of-type(2) a {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin: 20px;
+    }
+    #ydddl #ydddlBody>ul:nth-of-type(2) {
+        width: 95%;
+        margin: 0 auto;
+        /* display: none; */
+    }
+    #ydddl #ydddlBody>ul:nth-of-type(2) p {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        margin: 20px 0;
+        font-size: 20px;
+    }
+    #ydddl #ydddlBody>ul:nth-of-type(2) li {
+        border-bottom: 1px solid #E6E6E6;
+        margin: 20px 0px;
+    }
+    #ydddl #ydddlBody>ul:nth-of-type(2) li input[type="text"] {
+        width: 100%;
+        border: none;
+        padding: 10px 8px;
+    }
+    #ydddl #ydddlBody>ul:nth-of-type(2) li input:focus {
+        outline: none;
+    }
+    #ydddl #ydddlBody>ul:nth-of-type(2) li:nth-of-type(5) {
+        position: relative;
+    }
+    #ydddl #ydddlBody>ul:nth-of-type(2) li:nth-of-type(5)>a {
+        position: absolute;
+        top: 8px;
+        right: 10px;
+    }
+    #ydddl #ydddlBody>ul:nth-of-type(2) li:nth-of-type(6) {
+        border: none;
+        text-align: center;
+        font-size: 13px;
+    }
+    #ydddl #ydddlBody>ul:nth-of-type(2) li:nth-of-type(7) button {
+        width: 95%;
+        height: 40px;
+        margin: 0 auto;
+        line-height: 40px;
+        display: block;
+        text-align: center;
+        font-size: 14px;
+        border: none;
+        background: #00adef;
+        color: white;
+    }
+    #ydddl #ydddlBody>ul:nth-of-type(2) li:nth-of-type(8) {
+        text-align: center;
+        font-size: 13px;
+        border: none;
+    }
+}
