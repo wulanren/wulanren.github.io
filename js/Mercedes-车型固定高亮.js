@@ -15,7 +15,6 @@ $(document).ready(
                 } else {
                     return;
                 }
-                console.log(itemTop);
             });
             var contentLink = AMGejdh.find(".gaoliang1");
             if (contentId && contentLink.attr('href') != contentId) {

@@ -1,7 +1,6 @@
 function ercishuaxin() {
     function imgonload() {
         let img = document.querySelectorAll("img");
-        console.log(img);
         for (let i = 0; i < img.length; i++) {
             if (img[i].getBoundingClientRect().top < window.innerHeight) {
 

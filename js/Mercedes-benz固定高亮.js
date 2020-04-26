@@ -14,7 +14,6 @@ $(document).ready(
                 } else {
                     return;
                 }
-                console.log(itemTop);
             });
             var contentLink = ejdh.find(".current");
             if (contentId && contentLink.attr('href') != contentId) {

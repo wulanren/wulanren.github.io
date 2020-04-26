@@ -2,7 +2,6 @@ window.onload = function() {
     var ejdhs = document.getElementById('ejdh');
     // 二级导航栏距顶部距离
     var jlTop = ejdhs.offsetTop;
-    //console.log(divT);
     window.onscroll = function() {
         // 获取当前页面的滚动条纵坐标位置 （依次为火狐谷歌、safari、IE678）
         var scrollT = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;

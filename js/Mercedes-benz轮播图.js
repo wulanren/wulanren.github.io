@@ -1,4 +1,3 @@
-
 var items = document.getElementsByClassName('item'); //图片
 var goPreBtn = document.getElementById('goPre');
 var goNextBtn = document.getElementById('goNext');
@@ -9,61 +8,60 @@ var time = 0; //定时器跳转参数
 //第几个点在展示
 
 var clearActive = function() {
-	for (var i = 0; i < items.length; i++) {
-		items[i].className = 'item';
-	}
-	for (var i = 0; i < items.length; i++) {
-		points[i].className = 'point'
-	}
+    for (var i = 0; i < items.length; i++) {
+        items[i].className = 'item';
+    }
+    for (var i = 0; i < items.length; i++) {
+        points[i].className = 'point'
+    }
 }
 var goIndex = function() {
-	clearActive();
-	console.log(index)
-	points[index].className = 'point active'
-	items[index].className = 'item active';
+    clearActive();
+    points[index].className = 'point active'
+    items[index].className = 'item active';
 }
 var goNext = function() {
-	if (index < 6) {
-		index++;
+    if (index < 6) {
+        index++;
 
-	} else {
-		index = 0;
-	}
+    } else {
+        index = 0;
+    }
 
-	goIndex();
+    goIndex();
 
 }
 var goPre = function() {
-	if (index == 0) {
-		index = 6;
-	} else {
-		index--;
-	}
-	goIndex();
+    if (index == 0) {
+        index = 6;
+    } else {
+        index--;
+    }
+    goIndex();
 }
 goNextBtn.addEventListener('click', function() {
-	time = 0;
-	goNext();
+    time = 0;
+    goNext();
 })
 goPreBtn.addEventListener('click', function() {
-	time = 0;
-	goPre();
+    time = 0;
+    goPre();
 })
 for (var i = 0; i < points.length; i++) {
-	points[i].addEventListener('click', function() {
-		var pointIndex = this.getAttribute('data-index');
-		index = pointIndex;
+    points[i].addEventListener('click', function() {
+        var pointIndex = this.getAttribute('data-index');
+        index = pointIndex;
 
-		goIndex();
-		time = 0;
-	})
+        goIndex();
+        time = 0;
+    })
 }
 //4000ms   跳转一次
 setInterval(function() {
-	time++;
-	if (time == 40) {
-		time = 0;
-		goNext();
+    time++;
+    if (time == 40) {
+        time = 0;
+        goNext();
 
-	}
+    }
 }, 100)

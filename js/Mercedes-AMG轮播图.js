@@ -15,7 +15,6 @@ var clearActive = function() {
 }
 var goIndex = function() {
     clearActive();
-    console.log(index)
     points[index].className = 'point active'
     items[index].className = 'item active';
 }
