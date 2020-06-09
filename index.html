@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="libs/scrollReveal/scrollreveal.min.js"></script>
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="libs/glide/glide.core.min.css" />
+    <link rel="stylesheet" href="libs/glide/glide.theme.min.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>吴舒桐</title>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header class="open">
+        <div class="logo">Mercedes-benz Project</div>
+        <!-- 导航 -->
+        <nav>
+            <a href="#home">首页</a>
+            <a href="#about-us">关于本站</a>
+            <a href="#team-intro">团队介绍</a>
+            <a href="#lxwm">版权备案声明</a>
+            <a href="">魔方小游戏</a>
+            <a href="https://github.com/wulanren/wulanren.github.io.git">查看源代码</a>
+        </nav>
+        <!-- 折叠导航按钮 -->
+        <div class="burger">
+            <div class="burger-line1"></div>
+            <div class="burger-line2"></div>
+            <div class="burger-line3"></div>
+        </div>
+    </header>
+    <!-- 首页图片轮播，使用glide JS插件 -->
+    <div class="glide" id="home">
+        <!-- 轮播轨道 -->
+        <div class="glide__track" data-glide-el="track">
+            <!-- 所有轮播容器 -->
+            <div class="glide__slides">
+                <!-- 单个轮播组件 -->
+                <div class="glide__slide">
+                    <!-- 轮播标题 -->
+                    <div class="slide-caption">
+                        <h1>用创新点缀人生，让科技融入理想。</h1>
+                        <h3>
+                            科技创新大平台，智慧生活新引擎。依靠科技进步推进经济跨越式发展。用创新点缀人生，让科技融入理想。
+                        </h3>
+                        <!-- 探索按钮 -->
+                        <button class="explore-btn" onclick="window.open('Mercedes-benz.html','_blank') ">探索更多</button>
+                    </div>
+                    <!-- 背景遮罩 -->
+                    <div class="backdrop"></div>
+                    <!-- 轮播图片 -->
+                    <img src="img/首页轮播图2.jpg" alt="" />
+                </div>
+                <!-- 第二张轮播 -->
+                <div class="glide__slide">
+                    <div class="slide-caption left">
+                        <h1>科技改变世界</h1>
+                        <h3>
+                            立足科学发展，着力自主创新。加速科技进步，为全市经济社会发展提供有力支撑。凝聚科技创意，成就创新梦想。
+                        </h3>
+                        <button class="explore-btn" onclick="window.open('Mercedes-AMG.html','_blank') ">探索更多</button>
+                    </div>
+                    <div class="backdrop"></div>
+                    <!-- 轮播视频 -->
+                    <video src="video/AMG.mp4" muted autoplay loop></video>
+                </div>
+            </div>
+        </div>
+        <!-- glide 控制按钮 -->
+        <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+          <
+        </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+          >
+        </button>
+        </div>
+        <!-- glide 控制圆点 -->
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+        </div>
+    </div>
+    <!-- 内容容器 -->
+    <div class="content-wrapper">
+        <!-- 关于我们， id用来导航菜单跳转 -->
+        <section id="about-us" class="about-us">
+            <!-- 标题 -->
+            <h2 class="title1">关于本站</h2>
+            <!-- 补充说明区域 -->
+            <p class="intro">
+                本站仅用做学习用途,非商业用途，如有侵犯商标权或肖像权,联系侵删
+            </p>
+            <div class="features">
+                <div class="card">
+                    <i class="icon fas fa-envelope"></i>
+                    <div class="card-content">
+                        <h3>电子邮箱</h3>
+                        <span>wu49032320@iCloud.com</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <i class="icon fas fa-phone"></i>
+                    <div class="card-content">
+                        <h3>电话号码</h3>
+                        <span>+1(262)346 5709<br>美国号码，注意漫游</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <i class="icon fas fa-map-marker-alt"></i>
+                    <div class="card-content">
+                        <h3>位置</h3>
+                        <span>中国·山西·运城</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 成功案例 -->
+        <!-- section-bg 区域灰色背景 -->
+        <section id="showcases" class="showcases section-bg">
+            <h2 class="title1">项目展示</h2>
+            <!-- 筛选按钮 -->
+            <div class="filter-btns">
+                <p class="intro">
+                    图片有点杂乱无章。。。。。。。。。。。详情点击轮播图了解
+                </p>
+            </div>
+            <!-- 案例 -->
+            <div class="cases">
+                <!-- case-item样式类，web science为类别类 -->
+                <div class="case-item web science">
+                    <!-- 图片 -->
+                    <img src="img/Demo01.png" alt="" />
+                </div>
+                <div class="case-item web science">
+                    <img src="img/Demo02.png" alt="" />
+                </div>
+                <div class="case-item web">
+                    <img src="img/Demo03.png" alt="" />
+                </div>
+                <div class="case-item web">
+                    <img src="img/Demo04.png" alt="" />
+                </div>
+                <div class="case-item mobile">
+                    <img src="img/Demo05.png" alt="" />
+                </div>
+                <div class="case-item science">
+                    <img src="img/Demo06.png" alt="" />
+                </div>
+                <div class="case-item mobile web science">
+                    <img src="img/Demo07.png" alt="" />
+                </div>
+                <div class="case-item mobile ">
+                    <img src="img/Demo08.png" alt="" />
+                </div>
+            </div>
+        </section>
+        <!-- 服务流程 -->
+        <section id="service" class="service">
+            <h2 class="title1">项目流程</h2>
+            <p class="intro">
+                项目的从实施到落地，从0到1
+            </p>
+            <!-- 同关于我们 -->
+            <div class="services">
+                <div class="service-item">
+                    <i class="fas fa-comments"></i>
+                    <h2 class="service-title">项目启动</h2>
+                    <p class="service-content">
+                        2020.2.4,创建文件夹
+                    </p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-gavel"></i>
+                    <h2 class="service-title">主体完成</h2>
+                    <p class="service-content">
+                        2020.2.18,Mercedes-benz首页基本完成
+                    </p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-file-signature"></i>
+                    <h2 class="service-title">本地页面完成</h2>
+                    <p class="service-content">
+                        2020.2.25,本地页面全部完成。学习Git
+                    </p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-user"></i>
+                    <h2 class="service-title">项目进阶</h2>
+                    <p class="service-content">
+                        2020.2.27,项目连接域名,可供外网访问
+                    </p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h2 class="service-title">全部完成</h2>
+                    <p class="service-content">
+                        2020.3.10,加入七牛云CDN，加快访问速度,项目静态部分完成。
+                    </p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-user-check"></i>
+                    <h2 class="service-title">未完待续...</h2>
+                    <p class="service-content">
+                        在后台学习完成后，继续搭建后台管理页面...
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- 团队介绍 -->
+        <section id="team-intro" class="team-intro section-bg">
+            <h2 class="title1">团队介绍</h2>
+            <!-- 团队成员容器 -->
+            <div class="team-members">
+                <!-- 团队成员 -->
+                <div class="team-member">
+                    <!-- 成员照片 -->
+                    <div class="profile-image">
+                        <img src="img/最帅二哈.jpg" alt="" />
+                    </div>
+                    <!-- 成员姓名 -->
+                    <h4 class="name">吴舒桐</h4>
+                    <!-- 成员职位 -->
+                    <p class="position">学员</p>
+                    <!-- 成员社交账号 -->
+                    <ul class="social-links">
+                        <li>
+                            <a href="#"><i class="fab fa-weixin"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-weibo"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="team-member">
+                    <div class="profile-image">
+                        <img src="img/李知恩.jpg" alt="" />
+                    </div>
+                    <h4 class="name">李知恩</h4>
+                    <p class="position">XXX</p>
+                    <ul class="social-links">
+                        <li>
+                            <a href="#"><i class="fab fa-weixin"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-weibo"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="team-member">
+                    <div class="profile-image">
+                        <img src="img/欧阳娜娜.jpg" alt="" />
+                    </div>
+                    <h4 class="name">欧阳娜娜</h4>
+                    <p class="position">XXXX</p>
+                    <ul class="social-links">
+                        <li>
+                            <a href="#"><i class="fab fa-weixin"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-weibo"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="team-member">
+                    <div class="profile-image">
+                        <img src="img/迪丽热巴.jpg" alt="" />
+                    </div>
+                    <h4 class="name">迪丽热巴</h4>
+                    <p class="position">XXXX</p>
+                    <ul class="social-links">
+                        <li>
+                            <a href="#"><i class="fab fa-weixin"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-weibo"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- 数据展示  -->
+        <section id="data-section" class="data-section">
+            <!-- 单个数据  -->
+            <div class="data-piece">
+                <!-- 图标 -->
+                <i class="fas fa-code"></i>
+                <!-- 数据 -->
+                <div class="num">13886</div>
+                <!-- 单位 -->
+                <div class="data-desc">行代码</div>
+            </div>
+            <div class="data-piece">
+                <i class="fas fa-award"></i>
+                <div class="num">0</div>
+                <div class="data-desc">个奖项</div>
+            </div>
+            <div class="data-piece">
+                <i class="fas fa-laugh-wink"></i>
+                <div class="num">22</div>
+                <div class="data-desc">天完成</div>
+            </div>
+            <div class="data-piece">
+                <i class="fas fa-folder"></i>
+                <div class="num">9</div>
+                <div class="data-desc">个页面</div>
+            </div>
+        </section>
+        <!-- 公司动态 -->
+        <section id="company-activities" class="company-activities">
+            <h2 class="title1">网站动态</h2>
+            <p class="intro">
+                关注网站动态，第一时间获取一手消息
+            </p>
+            <!-- 动态容器 -->
+            <div class="activities">
+                <!-- 动态 -->
+                <div class="activity">
+                    <!-- 动态图片 -->
+                    <div class="act-image-wrapper">
+                        <img src="images/activity01-image.jpg" alt="" />
+                    </div>
+                    <!-- 动态元数据，包括发表日期和评论数量 -->
+                    <div class="meta">
+                        <!-- 发布日期 -->
+                        <p class="date-published">
+                            <i class="far fa-calendar"></i> 2020年X月X日
+                        </p>
+
+                        <p class="comments"><i class="far fa-comments"></i> X条评论</p>
+                    </div>
+                    <!-- 动态标题 -->
+                    <h2 class="act-title">XXXXXXXXXXXXXXXX</h2>
+                    <!-- 动态内容摘要 -->
+                    <article>
+                        XXXXXXXXXXXXXXXXXXXXXXX
+                    </article>
+                    <!-- 阅读更多按钮 -->
+                    <button class="readmore-btn">阅读更多</button>
+                </div>
+                <div class="activity">
+                    <div class="act-image-wrapper">
+                        <img src="images/watercrafts-on-river-3464632.jpg" alt="" />
+                    </div>
+                    <div class="meta">
+                        <p class="date-published">
+                            <i class="far fa-calendar"></i> 2020年X月X日
+                        </p>
+                        <p class="comments"><i class="far fa-comments"></i> X条评论</p>
+                    </div>
+                    <h2 class="act-title">XXXXXXXXXXXXXXXX</h2>
+                    <article>
+                        XXXXXXXXXXXXXXXXXXXXXXX
+                    </article>
+                    <button class="readmore-btn">阅读更多</button>
+                </div>
+                <div class="activity">
+                    <div class="act-image-wrapper">
+                        <img src="images/red-suspension-bridge-3493772.jpg" alt="" />
+                    </div>
+                    <div class="meta">
+                        <p class="date-published">
+                            <i class="far fa-calendar"></i> 2020年X月X日
+                        </p>
+                        <p class="comments"><i class="far fa-comments"></i> X条评论</p>
+                    </div>
+                    <h2 class="act-title">XXXXXXXXXXXXXXXX</h2>
+                    <article>
+                        XXXXXXXXXXXXXXXXXXXXXXX
+                    </article>
+                    <button class="readmore-btn">阅读更多</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- 底部信息 -->
+    <footer id="lxwm">
+        <div class="lxwm">
+            <p class="footerTitle">联系我们</p>
+            <p>QQ: 49032320</p>
+            <p>Address: 中国山西省运城市</p>
+            <p>Email: WU49032320@ICLOUD.COM</p>
+        </div>
+        <div class="lxwm">
+            <p class="footerTitle">版权备案</p>
+            <p>晋ICP备20003303号</p>
+            <p>魔方小游戏 商标为美国 <a href="#">Google LLC</a> 所有</p>
+            <p>Mercedes-benz 商标为 <a href="#">梅赛德斯奔驰中国</a> 公司所有</p>
+        </div>
+        <div class="lxwm">
+            <p class="footerTitle">特别感谢</p>
+            <p><a href="https://github.com/">Github</a> 网站托管服务</p>
+            <p><a href="">七牛云</a> 图床服务</p>
+            <p><a href="https://cn.aliyun.com/">阿里云</a> 域名服务</p>
+            <p>
+                <a href="https://www.jetbrains.com/?from=Mercedes-benz">JetBrains</a> IDE支持
+            </p>
+        </div>
+        <!-- 底部菜单 -->
+        <div class="footer-menus">
+            <div class="scrollToTop">
+                <a href="#home"><i class="fas fa-chevron-up"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- 轮播插件 -->
+    <script src="libs/glide/glide.min.js"></script>
+    <!-- 案例筛选组件  -->
+    <script src="libs/isotope/isotope.pkgd.min.js"></script>
+    <!-- 动画组件 -->
+    <script src="libs/anime/anime.min.js"></script>
+    <!-- 流畅滑动组件 -->
+    <script src="libs/smooth-scroll/smooth-scroll.polyfills.min.js"></script>
+    <!-- 自定义JS文件 -->
+    <script src="index.js"></script>
+</body>
+
+</html>
