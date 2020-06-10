@@ -1142,7 +1142,7 @@ footer .lxwm p img {
 
 .card:nth-of-type(2):hover span {
     position: absolute;
-    bottom: 25px;
+    top: 50%;
     text-align: center;
 }
 
