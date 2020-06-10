@@ -1191,3 +1191,14 @@ footer .lxwm p img {
         max-width: 500px;
     }
 }
+
+.Shejiaoimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.Shejiao:hover .Shejiaoimg {
+    display: block;
+}
